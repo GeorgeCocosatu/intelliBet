@@ -1,0 +1,1056 @@
+<!DOCTYPE html>
+<html xmlns:th="thymeleaf.org">
+
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" th:href="@{/css/style.css}"/>
+    <link rel="stylesheet" type="text/css" href="./css/style.css" media="screen">
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+
+</head>
+<!------------------------------------------------->
+<!---      Marked for removal   ->      +++      -->
+<!------------------------------------------------->
+<body class="layout-one-column sportsbetting desktop site-wide">
+<div id="container">
+    <header id="header">
+        <div class="top-container">
+            <div class="header-container">
+                <h1 class="header-controls-heading"
+                    title="Online Betting - Sports Bets &amp; Betting Odds">Online Betting - Sports Bets &amp; Betting
+                    Odds</h1>
+                <div class="header-controls">
+                    <ul class="header-menu">
+                        <li class="menu-item">
+                            <a href=""
+                               class="has-icon-suffix  external-link ">
+                                <span class="text">About Us</span>
+                                <i class="icon-wrapper icon-suffix external-link">
+                                </i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="bottom-container">
+            <div class="header-container">
+                <h1></h1>
+                <img name="Logo"
+                     th:src="@{/img/Logo.png}">
+                <div class="account-container">
+                    <div id="login-64127"
+                         data-test-name="container-login">
+                        <div class="">
+                            <div class="widget login">
+                                <div class="login-content">
+                                    <div class="top-container"></div>
+                                    <div style="overflow: hidden; height: 0px; transition: height 400ms ease-out 0s;"></div>
+                                    <div class="MainLogin__inline___1STfT">
+                                        <div class="MainLogin__headerListContainer___18GWl MainLogin__shrinkRight___2QG_i">
+                                            <div>
+                                                <div class="Group__vertical___3xm_m Group__root___hnqau Group__tight___2kwl8">
+                                                    <div class="Group__horizontal___33MBr Group__root___hnqau Group__normal___2vWh8">
+
+                                                        <form sec:authorize="isAnonymous()" th:action="@{/login}" method="POST">
+                                                            <div class="Group__horizontal___33MBr Group__root___hnqau Group__none___3J27q">
+                                                                <div class="_e296pg">
+                                                                    <div class="_e7hn5">
+                                                                        <div class="_irsnq7">
+                                                                            <div class="Fieldstyle__FormField-sc-1gdsmw1-0 dVqUFp">
+                                                                                <input class="Field-headerstyle__HeaderInput-sc-1p523a3-0 fvfEHO Fieldstyle__Input-sc-1gdsmw1-1 iTCtjl"
+                                                                                       id="ufe_unique_id_1"
+                                                                                       name="username"
+                                                                                       type="email"
+                                                                                       placeholder="Email"
+                                                                                       autocomplete="off"
+                                                                                       value="">
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="_3gspvn">
+                                                                    <div class="_e7hn5">
+                                                                        <div class="_irsnq7">
+                                                                            <div class="fieldContainer">
+                                                                                <div class="Fieldstyle__FormField-sc-1gdsmw1-0 dVqUFp">
+                                                                                    <input class="Field-headerstyle__HeaderInput-sc-1p523a3-0 fvfEHO Fieldstyle__Input-sc-1gdsmw1-1 beIQrZ"
+                                                                                           id="ufe_unique_id_2"
+                                                                                           name="password"
+                                                                                           type="password"
+                                                                                           placeholder="Password"
+                                                                                           autocomplete="off"
+                                                                                           value="">
+                                                                                </div>
+                                                                                <div class="Password__decorator___18BCS">
+                                                                                    <div>
+                                                                                        <a class="_1mki11ol"
+                                                                                           data-test-name="forgot-password">
+																		 <span>
+																		 <span class="ForgotPasswordLink__forgotPassword___FNdCi">Forgot?</span>
+																		 </span>
+                                                                                        </a>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div>
+                                                                    <button class="_192xn9cNaN"
+                                                                            data-test-name="btn-login" type="submit">
+														                <span class="_7byueq">
+														                    <span class="_1etkxf1">Log In</span>
+														                </span>
+                                                                    </button>
+                                                                </div>
+                                                            </div>
+
+                                                        </form>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="bottom-container">
+                                            <div sec:authorize="isAnonymous()" class="register-button-container">
+                                                <a href="/register" class="_10sdc5fNaN">
+                                                    <span class="_7byueq">
+                                                        <span class="_1etkxf1">Register</span>
+                                                    </span>
+                                                </a>
+                                            </div>
+                                            <div sec:authorize="isAuthenticated()" class="register-button-container">
+                                                <a href="/logout" class="_10sdc5fNaN">
+                                                    <span class="_7byueq">
+                                                        <span class="_1etkxf1">Log out</span>
+                                                    </span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="drawer-bottom"
+             class="drawer hidden">
+            <div class="drawer-arrow"></div>
+            <div class="drawer-content drawer-content-right"></div>
+        </div>
+        <div id="drawerBottom-115461"></div>
+    </header>
+    <div id="navigation-355596" class="widget navigation">
+        <div id="nav-main"
+             class="main-navigation">
+            <nav>
+                <ul class="menu-list product-navigation">
+                    <li class="list-item has-sub ">
+                        <a href="/home"
+                           class="has-icon-prefix link-item"
+                           title="Home">
+                            <i class="icon-wrapper icon-prefix sportsbook">
+                            </i>
+                            <span class="text">Home</span>
+                        </a>
+                    </li>
+
+                    <li sec:authorize="isAuthenticated()" class="list-item">
+                        <a href="/myBets"
+                           class="has-icon-prefix link-item"
+                           title="My Bets">
+                            <i class="icon-wrapper icon-prefix casino">
+                            </i>
+                            <span class="text">My Bets</span>
+                        </a>
+                    </li>
+
+                    <li sec:authorize="isAuthenticated()" class="list-item">
+                        <a href="#"
+                           class="has-icon-prefix link-item"
+                           title="My Account">
+                            <i class="icon-wrapper icon-prefix horse-racing">
+                            </i>
+                            <span class="text">My Account</span>
+                        </a>
+                    </li>
+                    <li sec:authorize="isAuthenticated()" class="list-item">
+                        <a href="/newEvent"
+                           class="has-icon-prefix link-item"
+                           title="Admin">
+                            <i class="icon-wrapper icon-prefix live-casino-wheel">
+                            </i>
+                            <span class="text">Admin</span>
+                        </a>
+                    </li>
+                    <li sec:authorize="isAnonymous()" class="list-item active">
+                        <a href="/register"
+                           class="has-icon-prefix link-item"
+                           title="Admin">
+                            <i class="icon-wrapper icon-prefix live-casino-wheel">
+                            </i>
+                            <span class="text">Register</span>
+                        </a>
+                    </li>
+
+                </ul>
+                <ul class="menu-list misc-navigation">
+
+
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+
+    <div id="content">
+        <div id="main-wrapper">
+            <div id="main" role="main">
+                <div class="main-container">
+                    <div id="column-primary" class="page-column">
+                        <article class="widget multi-page-registration-form" id="multi-page-registration-form-725633">
+                            <div class="header-image">
+                                <h2 class="heading">Register with us</h2>
+                            </div>
+
+                            <div id="registrationFields-725633" style="display:block;">
+                                <div class="form-nav-wrapper">
+                                    <ul class="form-nav">
+                                        <li class="form-nav-item">
+                                            <a href="#registrationStep:0" class="form-nav-link active"
+                                               data-target-index="0">
+                                                <span class="form-nav-count"> <span class="alert">!</span> <i
+                                                        class="icon-wrapper success"><svg viewBox="0 0 32 32"
+                                                                                          class="icon"><use
+                                                        xlink:href="#icon-success"></use></svg></i> 1 </span>
+                                            </a>
+                                            <a href="#registrationStep:1" class="form-nav-link " data-target-index="1">
+											 <span class="form-nav-count">
+												<span class="alert">!</span> 
+												<i class="icon-wrapper success">
+												   <svg viewBox="0 0 32 32" class="icon">
+													  <use xlink:href="#icon-success">
+														<svg viewBox="0 0 32 27" id="icon-success"><path
+                                                                d="M27.022 0L9.956 17.053l-4.978-4.974L0 17.053 9.956 27l4.977-4.974L32 4.974z"></path></svg>
+													  </use>
+												   </svg>
+												</i>
+												2 
+											 </span>
+                                            </a>
+                                        </li>
+                                        <li class="form-nav-item">
+                                            <a href="#registrationStep:2" class="form-nav-link " data-target-index="2">
+											 <span class="form-nav-count">
+												<span class="alert">!</span> 
+												<i class="icon-wrapper success">
+												   <svg viewBox="0 0 32 32" class="icon">
+													  <use xlink:href="#icon-success"></use>
+												   </svg>
+												</i>
+												3 
+											 </span>
+                                            </a>
+                                        </li>
+                                        <li class="form-nav-item">
+                                            <a href="#registrationStep:3" class="form-nav-link " data-target-index="3">
+											 <span class="form-nav-count">
+												<span class="alert">!</span> 
+												<i class="icon-wrapper success">
+												   <svg viewBox="0 0 32 32" class="icon">
+													  <use xlink:href="#icon-success"></use>
+												   </svg>
+												</i>
+												4 
+											 </span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <ul class="form-view-list">
+                                    <form th:object="${userForm}" th:action="@{/register}" method="post" class="form"
+                                          novalidate="novalidate">
+
+                                        <!-- Part 1 of the Form -->
+                                        <li th:classappend="${#strings.toString(userForm.pageSection)} == 'section-1' ? '' : 'hidden' " class ="form-view form-view-1" >
+                                            <h3 class="form-view-heading js-inject">Let's start with your personal
+                                                details</h3>
+
+                                            <div class="message-container hidden"></div>
+                                            <ol class="field-list">
+
+
+                                                <li  class="field-row field-row-default-hidden">
+                                                    <fieldset class="form-field" data-type="Group"
+                                                              data-id="Group-280888" data-exclude="true"
+                                                              data-view-mode="edit">
+                                                        <div class="view view-group edit">
+                                                            <div class="field-group">
+                                                                <div class="group-field size1of2">
+                                                                    <div class="form-field" data-test-name="firstName"
+                                                                         data-type="Text" data-id="firstName"
+                                                                         data-mandatory="true"
+                                                                         data-reg-exp="^[^0-9!\&quot;#$%&amp;()*+,.\\\/_;<=>?@\\[\\\\\\]\\^\\{|}~]{2,100}$"
+                                                                         data-information-message=""
+                                                                         data-error-message="Your first name must be between 2 and 100 characters in length and may not contain numbers."
+                                                                         data-group-id="Group-280888"
+                                                                         data-field-type="text" data-view-mode="edit"
+                                                                         data-tracking="0"
+                                                                         data-id-getcustomer="firstName"
+                                                                         data-id-registercustomer="customer.firstName"
+                                                                         data-id-migratecustomercma="customerProfile.firstName"
+                                                                         data-id-getcustomercma="firstName"
+                                                                         data-id-updatecustomer="customerProfile.firstName">
+                                                                        <div class="view view-field presentation hidden"
+                                                                             data-view-type="presentation"><label
+                                                                                class="field-label"
+                                                                                data-test-name="firstName">First
+                                                                            name</label> <span name="firstName"
+                                                                                               class="field"></span>
+                                                                        </div>
+                                                                        <div class="view view-field edit"
+                                                                             data-view-type="edit">
+                                                                            <label class="field-label"
+                                                                                   data-test-name="firstName">First name
+                                                                                <span class="mandatory">*</span>
+                                                                            </label>
+                                                                            <div class="validation-container">
+																	 <span class="validation-icon">
+																		<i class="icon-wrapper success">
+																		   <svg viewBox="0 0 32 32" class="icon">
+																			  <use xlink:href="#icon-success"></use>
+																		   </svg>
+																		</i>
+																	 </span>
+                                                                                <div class="form-textbox full-width">
+
+                                                                                    <input th:field="*{firstName}"
+                                                                                           type="text" name="firstName"
+                                                                                           id="firstName"
+                                                                                           placeholder="First name"
+                                                                                           class="field"></div>
+                                                                                <div class="message-container message-box hidden">
+
+
+                                                                                </div>
+
+                                                                                <p class="error-message"
+                                                                                   th:each="error: ${#fields.errors('firstName')}"
+                                                                                   th:text="${error}">Validation
+                                                                                    error</p>
+
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="group-field size1of2">
+                                                                    <div class="form-field" data-test-name="lastName"
+                                                                         data-type="Text" data-id="lastName"
+                                                                         data-mandatory="true"
+                                                                         data-reg-exp="^[^0-9!\&quot;#$%&amp;()*+,.\\\/_;<=>?@\\[\\\\\\]\\^\\{|}~]{2,100}$"
+                                                                         data-information-message=""
+                                                                         data-error-message="Your last name must be between 2 and 100 characters in length and may not contain numbers."
+                                                                         data-group-id="Group-280888"
+                                                                         data-field-type="text" data-view-mode="edit"
+                                                                         data-tracking="0"
+                                                                         data-id-getcustomer="lastName"
+                                                                         data-id-registercustomer="customer.lastName"
+                                                                         data-id-migratecustomercma="customerProfile.lastName"
+                                                                         data-id-getcustomercma="lastName"
+                                                                         data-id-updatecustomer="customerProfile.lastName">
+                                                                        <div class="view view-field presentation hidden"
+                                                                             data-view-type="presentation"><label
+                                                                                class="field-label"
+                                                                                data-test-name="lastName">Last
+                                                                            name</label> <span name="lastName"
+                                                                                               class="field"></span>
+                                                                        </div>
+                                                                        <div class="view view-field edit"
+                                                                             data-view-type="edit">
+                                                                            <label class="field-label"
+                                                                                   data-test-name="lastName">Last name
+                                                                                <span class="mandatory">*</span>
+                                                                            </label>
+                                                                            <div class="validation-container valid">
+																	 <span class="validation-icon">
+																		<i class="icon-wrapper success">
+																		   <svg viewBox="0 0 32 32" class="icon">
+																			  <use xlink:href="#icon-success"></use>
+																		   </svg>
+																		</i>
+																	 </span>
+                                                                                <div class="form-textbox full-width">
+                                                                                    <input th:field="*{lastName}"
+                                                                                           type="text" name="lastName"
+                                                                                           id="lastName"
+                                                                                           placeholder="Last name"
+                                                                                           class="field"></div>
+                                                                                <div class="message-container message-box hidden"></div>
+                                                                                <p class="error-message"
+                                                                                   th:each="error: ${#fields.errors('lastName')}"
+                                                                                   th:text="${error}">Validation
+                                                                                    error</p>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </fieldset>
+                                                </li>
+
+
+                                                <li class="field-row field-row-default-hidden">
+                                                    <div class="form-field" data-test-name="email" data-type="Text"
+                                                         data-id="email" data-mandatory="true"
+                                                         data-reg-exp="^(?!(.*\\.\\.).*)(?=.{6,255}$)[^@\\s]+@[^@\\s,]+\\.[a-zA-Z0-9\\u007f-\\uffff-]{2,}$"
+                                                         data-information-message=""
+                                                         data-error-message="Your e-mail is not valid" data-group-id=""
+                                                         data-field-type="email" data-view-mode="edit" data-tracking="0"
+                                                         data-id-getcustomer="email"
+                                                         data-id-registercustomer="customer.email"
+                                                         data-id-migratecustomercma="customerProfile.email"
+                                                         data-id-getcustomercma="email"
+                                                         data-id-updatecustomer="customerProfile.email">
+                                                        <div class="view view-field presentation hidden"
+                                                             data-view-type="presentation"><label class="field-label"
+                                                                                                  data-test-name="email">E-mail</label>
+                                                            <span name="email" class="field"></span></div>
+                                                        <div class="view view-field edit" data-view-type="edit">
+                                                            <label class="field-label" data-test-name="email">E-mail
+                                                                <span class="mandatory">*</span> </label>
+                                                            <div class="validation-container valid">
+														 <span class="validation-icon">
+															<i class="icon-wrapper success">
+															   <svg viewBox="0 0 32 32" class="icon">
+																  <use xlink:href="#icon-success"></use>
+															   </svg>
+															</i>
+														 </span>
+                                                                <div class="form-textbox full-width"><input
+                                                                        th:field="*{email}" type="email" name="email"
+                                                                        id="email" placeholder="email@example.com"
+                                                                        class="field"></div>
+                                                                <div class="message-container message-box hidden"></div>
+                                                                <p class="error-message"
+                                                                   th:each="error: ${#fields.errors('email')}"
+                                                                   th:text="${error}">Validation error</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </li>
+
+
+                                                <li class="field-row field-row-default-hidden date-of-birth">
+                                                    <div class="form-field" data-test-name="birthDate" data-type="Date"
+                                                         data-id="birthDate" data-mandatory="true"
+                                                         data-reg-exp="^[0-9]{4}-[0-9]{2}-[0-9]{2}$"
+                                                         data-information-message=""
+                                                         data-error-message="You need to be at least 18 years old to register."
+                                                         data-min-value="18" data-max-value="100" data-view-mode="edit"
+                                                         data-group-id="" data-tracking="0"
+                                                         data-id-getcustomer="birthInfo.birthDate"
+                                                         data-id-registercustomer="customer.birthInfo.birthDate"
+                                                         data-id-migratecustomercma="customerProfile.birthInfo.birthDate"
+                                                         data-id-getcustomercma="birthInfo.birthDate"
+                                                         data-id-updatecustomer="customerProfile.birthInfo.birthDate">
+                                                        <div class="view view-field presentation hidden"
+                                                             data-view-type="presentation"><label class="field-label"
+                                                                                                  data-test-name="birthDate">Date
+                                                            of birth:</label> <span name="birthDate"
+                                                                                    class="field"></span></div>
+                                                        <div class="view view-field edit" data-view-type="edit">
+                                                            <label class="field-label" data-test-name="birthDate">Date
+                                                                of birth <span class="mandatory">*</span> </label>
+                                                            <div class="validation-container valid">
+                                                                <div class="select-container">
+                                                                    <ul class="column-element-wrapper tight">
+                                                                        <li class="size1of3">
+                                                                            <div class="form-selectbox full-width">
+																		<span class="down-arrow">
+																			<i class='fas fa-level-down-alt'></i>
+																		</span>
+                                                                                <select th:field="*{dayOfBirth}"
+                                                                                        name="day" class="field"
+                                                                                        id="day">
+                                                                                    <option value="" disabled selected>
+                                                                                        Day
+                                                                                    </option>
+                                                                                    <option th:each="number : ${#numbers.sequence(1, 9)}"
+                                                                                            th:value="${number}"
+                                                                                            th:text="'0'+${number}">
+
+                                                                                    </option>
+                                                                                    <option th:each="number : ${#numbers.sequence(10, 31)}"
+                                                                                            th:value="${number}"
+                                                                                            th:text="${number}">
+
+                                                                                    </option>
+                                                                                </select>
+
+                                                                            </div>
+                                                                        </li>
+                                                                        <li class="size1of3">
+                                                                            <div class="form-selectbox full-width">
+																		<span class="down-arrow">
+																			<i class='fas fa-level-down-alt'></i>
+																		</span>
+                                                                                <select th:field="*{monthOfBirth}"
+                                                                                        name="month" class="field"
+                                                                                        id="month">
+                                                                                    <option value="" disabled=""
+                                                                                            selected="">Month
+                                                                                    </option>
+                                                                                    <option th:each="number : ${#numbers.sequence(01, 12)}"
+                                                                                            th:value="${number}"
+                                                                                            th:text="${number}">
+
+                                                                                    </option>
+                                                                                </select>
+
+                                                                            </div>
+                                                                        </li>
+                                                                        <li class="size1of3">
+                                                                            <div class="form-selectbox full-width">
+																		<span class="down-arrow">
+																			<i class='fas fa-level-down-alt'></i>
+																		</span>
+                                                                                <select th:field="*{yearOfBirth}"
+                                                                                        name="year" class="field"
+                                                                                        id="year">
+                                                                                    <option value="" disabled=""
+                                                                                            selected="">Year
+                                                                                    </option>
+                                                                                    <option th:each="number : ${#numbers.sequence(2002, 1900)}"
+                                                                                            th:value="${number}"
+                                                                                            th:text="${number}">
+
+                                                                                    </option>
+                                                                                </select>
+
+                                                                            </div>
+                                                                        </li>
+                                                                    </ul>
+                                                                    <div class="message-container message-box hidden"></div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </li>
+
+
+                                                <li class="field-row field-row-default-hidden gender">
+                                                    <div class="form-field" name="gender" data-type="RadioGroup"
+                                                         data-id="gender" data-mandatory="true" data-reg-exp="^0|1|2|9$"
+                                                         data-exclude="" data-information-message=""
+                                                         data-error-message="Please tell us if you are male or female"
+                                                         data-group-id="" data-view-mode="edit" data-tracking="0"
+                                                         data-id-getcustomer="gender"
+                                                         data-id-registercustomer="customer.gender"
+                                                         data-id-migratecustomercma="customerProfile.gender"
+                                                         data-id-getcustomercma="gender"
+                                                         data-id-updatecustomer="customerProfile.gender"
+                                                         data-options="{&quot;1&quot;: &quot;Male&quot;,&quot;2&quot;: &quot;Female&quot;}">
+                                                        <div class="view view-field presentation hidden"
+                                                             data-view-type="presentation"><label class="field-label"
+                                                                                                  data-test-name="gender">Gender:</label>
+                                                            <span name="gender" class="field"></span></div>
+                                                        <div class="view view-field edit" data-view-type="edit">
+                                                            <label class="field-label" data-test-name="gender"> Gender
+                                                                <span class="mandatory">*</span> </label>
+                                                            <div class="validation-container valid">
+                                                                <div class="radio-container ">
+                                                                    <ul class="radio-list">
+                                                                        <li><label class="field-label"
+                                                                                   data-test-name="gender-1"> <input
+                                                                                th:field="*{gender}" type="radio"
+                                                                                name="gender" value="male"
+                                                                                class="field"><span
+                                                                                class="custom-radio"></span><span
+                                                                                class="text">Male</span> </label></li>
+                                                                        <li><label class="field-label"
+                                                                                   data-test-name="gender-2"> <input
+                                                                                th:field="*{gender}" type="radio"
+                                                                                name="gender" value="female"
+                                                                                class="field"><span
+                                                                                class="custom-radio"></span><span
+                                                                                class="text">Female</span> </label></li>
+                                                                        <li><label class="field-label"
+                                                                                   data-test-name="gender-3"> <input
+                                                                                th:field="*{gender}" type="radio"
+                                                                                name="gender" value="non-binary"
+                                                                                class="field"><span
+                                                                                class="custom-radio"></span><span
+                                                                                class="text">Non binary</span> </label>
+                                                                        </li>
+                                                                    </ul>
+                                                                    <div class="message-container hidden"></div>
+                                                                    <p class="error-message"
+                                                                       th:each="error: ${#fields.errors('gender')}"
+                                                                       th:text="${error}">Validation error</p>
+                                                                </div>
+
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                            </ol>
+                                            <button name="continue-registration"
+                                                    class="btn align-right submit-button $buttonTypeClass submitRegistration"
+                                                    type="button">Continue
+                                            </button>
+                                            <ol class="field-list hidden"></ol>
+                                            <div id="captcha-element-725633">
+                                                <div></div>
+                                            </div>
+
+                                        </li>
+
+                                        <!-- Part 2 of the Form -->
+                                        <li th:classappend="${#strings.toString(userForm.pageSection)} == 'section-2' ? '' : 'hidden' " class="form-view form-view-2" style="">
+
+                                            <h3 class="form-view-heading js-inject">Hi <span class="firstName"></span>,
+                                                great having you with us!</h3>
+                                            <div class="message-container hidden"></div>
+                                            <ol class="field-list">
+                                                <li class="field-row field-row-default-hidden">
+                                                    <div class="form-field address-lookup lookup-field valid"
+                                                         data-type="AddressLookup" data-id="address-lookup"
+                                                         data-excluded="true" data-view-mode="edit"
+                                                         data-ref-field-ids="[&quot;postalCode&quot;,&quot;city&quot;,&quot;street&quot;]"
+                                                         data-api-error="Address lookup is unavailable"
+                                                         data-empty-fields="Please fill in an address"
+                                                         data-no-match-found="No match found"
+                                                         data-back-link-label="Back">
+                                                        <div class="view view-field presentation"
+                                                             data-view-type="presentation"><a href="#"
+                                                                                              class="search-toggler"
+                                                                                              data-type="search">Search
+                                                            address</a></div>
+                                                        <div class="view view-field edit hidden" data-view-type="edit">
+                                                            <div class="validation-container">
+                                                                <a href="#" class="search-toggler" data-type="manual">Enter
+                                                                    manually</a> <label class="field-label"
+                                                                                        data-test-name="address-lookup"
+                                                                                        for="address-lookup">Postcode
+                                                                lookup</label>
+                                                                <div class="lookup-wrapper">
+                                                                    <div class="form-textbox form-search full-width">
+                                                                        <input type="text" name="address-lookup"
+                                                                               id="address-lookup"
+                                                                               placeholder="Enter postcode"
+                                                                               class="field">
+                                                                        <a href="#reset" class="reset-link">
+                                                                            <i class="icon-wrapper error reset">
+                                                                                <svg viewBox="0 0 32 32" class="icon">
+                                                                                    <use xlink:href="#icon-error"></use>
+                                                                                </svg>
+                                                                            </i>
+                                                                        </a>
+                                                                        <div class="search-state manual-lookup">
+                                                                            <i class="icon-wrapper search">
+                                                                                <svg viewBox="0 0 32 32" class="icon">
+                                                                                    <use xlink:href="#icon-search"></use>
+                                                                                </svg>
+                                                                            </i>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="search-result hidden"
+                                                                     style="display: none; max-height: 312px;">
+                                                                    <div class="result" style="display: none;">
+                                                                        <ul class="typeahenu"
+                                                                            style="top: 38px; left: 0px;">
+                                                                            <li class="list-item details active"><a
+                                                                                    href="#"
+                                                                                    class="link-item has-icon-suffix"
+                                                                                    tabindex="-1"
+                                                                                    title="7000 Alec Issigonis Way Oxford Business Park North, Oxford, OX4 2ZY"><span
+                                                                                    class="text dynamic-width">7000 Alec Issigonis Way Oxford Business Park North, Oxford, OX4 2ZY</span></a>
+                                                                            </li>
+                                                                            <li class="list-item details"><a href="#"
+                                                                                                             class="link-item has-icon-suffix"
+                                                                                                             tabindex="-1"
+                                                                                                             title="Culina Logistics Ltd Magna Park, Lutterworth, LE17 4XH"><span
+                                                                                    class="text dynamic-width">Culina Logistics Ltd Magna Park, Lutterworth, LE17 4XH</span></a>
+                                                                            </li>
+                                                                            <li class="list-item details"><a href="#"
+                                                                                                             class="link-item has-icon-suffix"
+                                                                                                             tabindex="-1"
+                                                                                                             title="Unit 7000, Academy Park Gower Street Glasgow, G51 1PR"><span
+                                                                                    class="text dynamic-width">Unit 7000, Academy Park Gower Street Glasgow, G51 1PR</span></a>
+                                                                            </li>
+                                                                            <li class="list-item details"><a href="#"
+                                                                                                             class="link-item has-icon-suffix"
+                                                                                                             tabindex="-1"
+                                                                                                             title="Building 7000, Langstone Road Langstone, Havant, PO9 1SW"><span
+                                                                                    class="text dynamic-width">Building 7000, Langstone Road Langstone, Havant, PO9 1SW</span></a>
+                                                                            </li>
+                                                                        </ul>
+                                                                    </div>
+                                                                    <div class="no-result hidden"
+                                                                         style="display: none;"></div>
+                                                                </div>
+                                                                <div class="message-container message-box hidden">Please
+                                                                    fill in an address
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li class="field-row field-row-default-hidden">
+                                                    <div class="form-field " data-test-name="street" data-type="Text"
+                                                         data-id="street" data-mandatory="true"
+                                                         data-reg-exp="^[^&amp;<>\&quot;=\\(\\)%;\\\\]{4,120}$"
+                                                         data-information-message=""
+                                                         data-error-message="Your address is not valid" data-group-id=""
+                                                         data-field-type="text" data-view-mode="edit" data-tracking="0"
+                                                         data-id-getcustomer="contactInformation.postalAddress.street"
+                                                         data-id-registercustomer="customer.contactInformation.postalAddress.street"
+                                                         data-id-migratecustomercma="customerProfile.contactInformation.postalAddress.street"
+                                                         data-id-getcustomercma="contactInformation.postalAddress.street"
+                                                         data-id-updatecustomer="customerProfile.contactInformation.postalAddress.street">
+                                                        <div class="view view-field presentation hidden"
+                                                             data-view-type="presentation"><label class="field-label"
+                                                                                                  data-test-name="street">Address</label>
+                                                            <span name="street" class="field">Royal Mail, Road Transport Workshop, 7000 Alec Issigonis Way, Oxford Business Park North</span>
+                                                        </div>
+                                                        <div class="view view-field edit" data-view-type="edit">
+                                                            <label class="field-label" data-test-name="street">Address
+                                                                <span class="mandatory">*</span> </label>
+                                                            <div class="validation-container valid">
+														 <span class="validation-icon">
+															<i class="icon-wrapper success">
+															   <svg viewBox="0 0 32 32" class="icon">
+																  <use xlink:href="#icon-success"></use>
+															   </svg>
+															</i>
+														 </span>
+                                                                <div class="form-textbox full-width"><input
+                                                                        th:field="*{address}" type="text" name="street"
+                                                                        id="street"
+                                                                        placeholder="Street name &amp; number"
+                                                                        class="field"></div>
+                                                                <div class="message-container message-box hidden">Your
+                                                                    address is not valid
+                                                                </div>
+                                                                <p class="error-message"
+                                                                   th:each="error: ${#fields.errors('address')}"
+                                                                   th:text="${error}">Validation error</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li class="field-row field-row-default-hidden">
+                                                    <fieldset class="form-field" data-type="Group" data-id="Group-2527"
+                                                              data-exclude="true" data-view-mode="edit">
+                                                        <div class="view view-group edit">
+                                                            <div class="field-group">
+                                                                <div class="group-field size1of3">
+                                                                    <div class="form-field " data-test-name="postalCode"
+                                                                         data-type="Text" data-id="postalCode"
+                                                                         data-mandatory="true"
+                                                                         data-reg-exp="^[a-zA-Z0-9\\- ]{4,8}$"
+                                                                         data-information-message=""
+                                                                         data-error-message="Please enter a valid post code"
+                                                                         data-group-id="Group-2527"
+                                                                         data-field-type="text" data-view-mode="edit"
+                                                                         data-tracking="0"
+                                                                         data-id-getcustomer="contactInformation.postalAddress.postalCode"
+                                                                         data-id-registercustomer="customer.contactInformation.postalAddress.postalCode"
+                                                                         data-id-migratecustomercma="customerProfile.contactInformation.postalAddress.postalCode"
+                                                                         data-id-getcustomercma="contactInformation.postalAddress.postalCode"
+                                                                         data-id-updatecustomer="customerProfile.contactInformation.postalAddress.postalCode">
+                                                                        <div class="view view-field presentation hidden"
+                                                                             data-view-type="presentation"><label
+                                                                                class="field-label"
+                                                                                data-test-name="postalCode">Post
+                                                                            code</label> <span name="postalCode"
+                                                                                               class="field">OX4 2ZY</span>
+                                                                        </div>
+                                                                        <div class="view view-field edit"
+                                                                             data-view-type="edit">
+                                                                            <label class="field-label"
+                                                                                   data-test-name="postalCode">Post code
+                                                                                <span class="mandatory">*</span>
+                                                                            </label>
+                                                                            <div class="validation-container valid">
+																	 <span class="validation-icon">
+																		<i class="icon-wrapper success">
+																		   <svg viewBox="0 0 32 32" class="icon">
+																			  <use xlink:href="#icon-success"></use>
+																		   </svg>
+																		</i>
+																	 </span>
+                                                                                <div class="form-textbox full-width">
+                                                                                    <input th:field="*{postCode}"
+                                                                                           type="text" name="postalCode"
+                                                                                           id="postalCode"
+                                                                                           placeholder="Postcode"
+                                                                                           class="field"></div>
+                                                                                <div class="message-container message-box hidden">
+                                                                                    Please enter a valid post code
+                                                                                </div>
+                                                                                <p class="error-message"
+                                                                                   th:each="error: ${#fields.errors('postCode')}"
+                                                                                   th:text="${error}">Validation
+                                                                                    error</p>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="group-field size2of3">
+                                                                    <div class="form-field " data-test-name="city"
+                                                                         data-type="Text" data-id="city"
+                                                                         data-mandatory="true"
+                                                                         data-reg-exp="^[^&amp;<>\&quot;\/=\\(\\)%;\\\\]{1,50}$"
+                                                                         data-information-message=""
+                                                                         data-error-message="Your city is not valid"
+                                                                         data-group-id="Group-2527"
+                                                                         data-field-type="text" data-view-mode="edit"
+                                                                         data-tracking="0"
+                                                                         data-id-getcustomer="contactInformation.postalAddress.city"
+                                                                         data-id-registercustomer="customer.contactInformation.postalAddress.city"
+                                                                         data-id-migratecustomercma="customerProfile.contactInformation.postalAddress.city"
+                                                                         data-id-getcustomercma="contactInformation.postalAddress.city"
+                                                                         data-id-updatecustomer="customerProfile.contactInformation.postalAddress.city">
+                                                                        <div class="view view-field presentation hidden"
+                                                                             data-view-type="presentation"><label
+                                                                                class="field-label"
+                                                                                data-test-name="city">City</label> <span
+                                                                                name="city" class="field">Oxford</span>
+                                                                        </div>
+                                                                        <div class="view view-field edit"
+                                                                             data-view-type="edit">
+                                                                            <label class="field-label"
+                                                                                   data-test-name="city">City <span
+                                                                                    class="mandatory">*</span> </label>
+                                                                            <div class="validation-container valid">
+																	 <span class="validation-icon">
+																		<i class="icon-wrapper success">
+																		   <svg viewBox="0 0 32 32" class="icon">
+																			  <use xlink:href="#icon-success"></use>
+																		   </svg>
+																		</i>
+																	 </span>
+                                                                                <div class="form-textbox full-width">
+                                                                                    <input th:field="*{city}"
+                                                                                           type="text" name="city"
+                                                                                           id="city" placeholder="City"
+                                                                                           class="field"></div>
+                                                                                <div class="message-container message-box hidden">
+                                                                                    Your city is not valid
+                                                                                </div>
+                                                                                <p class="error-message"
+                                                                                   th:each="error: ${#fields.errors('city')}"
+                                                                                   th:text="${error}">Validation
+                                                                                    error</p>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </fieldset>
+                                                </li>
+                                                <li class="field-row field-row-default-hidden">
+                                                    <div class="form-field" data-type="Info" data-id="country"
+                                                         data-mandatory="true" data-reg-exp="^.{2}$"
+                                                         data-view-mode="edit" data-group-id="" data-value="GB"
+                                                         data-tracking="0"
+                                                         data-id-getcustomer="contactInformation.postalAddress.countryCode"
+                                                         data-id-registercustomer="customer.contactInformation.postalAddress.countryCode"
+                                                         data-id-getcustomercma="contactInformation.postalAddress.countryCode"
+                                                         data-id-updatecustomer="customerProfile.contactInformation.postalAddress.countryCode"
+                                                         data-id-migratecustomercma="customerProfile.contactInformation.postalAddress.countryCode">
+                                                        <div class="view view-field presentation hidden"
+                                                             data-view-type="presentation"><label class="field-label"
+                                                                                                  data-test-name="country">Country</label>
+                                                            <span name="country" class="field">United Kingdom</span>
+                                                        </div>
+                                                        <div class="view view-field edit" data-view-type="edit">
+                                                            <div class="field-row info-text-container">
+                                                                <label class="field-label" data-test-name="country">Country</label>
+                                                                <div class="validation-container valid">
+															<span class="validation-icon">
+															   <i class="icon-wrapper success">
+																  <svg viewBox="0 0 32 32" class="icon">
+																	 <use xlink:href="#icon-success"></use>
+																  </svg>
+															   </i>
+															</span>
+                                                                    <strong class="form-field-presentation">United
+                                                                        Kingdom</strong> <input type="hidden"
+                                                                                                name="country"
+                                                                                                class="field"
+                                                                                                value="GB">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li class="field-row field-row-default-hidden">
+                                                    <div class="field-row">
+                                                        <div class="form-field" data-type="PhoneNumber"
+                                                             data-id="phoneNumber" data-mandatory="true"
+                                                             data-reg-exp="^\\+?[0-9\\- ]{5,20}$" data-tooltip=""
+                                                             data-error-message="Your mobile number is not valid. Please check you’ve entered all the digits that appear after the country code. Spaces are not allowed."
+                                                             data-error-tooltip="Your mobile number is not valid. Please check you’ve entered all the digits that appear after the country code. Spaces are not allowed."
+                                                             data-information-message=""
+                                                             data-default-country="{&quot;name&quot;:&quot;Romania&quot;,&quot;code&quot;:&quot;RO&quot;,&quot;nationality&quot;:&quot;&quot;,&quot;prefix&quot;:&quot;+40&quot;,&quot;hidePrefix&quot;:false,&quot;numberPlaceholderText&quot;:&quot;&quot;,&quot;minDigits&quot;:3,&quot;maxDigits&quot;:12,&quot;translation&quot;:{&quot;name&quot;:&quot;Romania&quot;},&quot;contentId&quot;:{&quot;major&quot;:1,&quot;minor&quot;:29831},&quot;contentIdString&quot;:&quot;1.29831&quot;,&quot;self&quot;:&quot;/onecms/proxy/content/contentid/policy:1.29831&quot;,&quot;isReferenceContract&quot;:false,&quot;isContractInvalid&quot;:false,&quot;contractType&quot;:&quot;com.unibet.cms.contract.top.CountryContract&quot;}"
+                                                             data-tracking="0"
+                                                             data-id-getcustomer="contactInformation.phoneNumber"
+                                                             data-id-registercustomer="customer.contactInformation.phoneNumber"
+                                                             data-id-migratecustomercma="customerProfile.contactInformation.phoneNumber"
+                                                             data-id-getcustomercma="contactInformation.phoneNumber"
+                                                             data-id-updatecustomer="customerProfile.contactInformation.phoneNumber">
+                                                            <div class="view view-field presentation hidden"
+                                                                 data-view-type="presentation"><label
+                                                                    class="field-label" data-test-name="phoneNumber">Mobile
+                                                                Number</label> <span name="phoneNumber"
+                                                                                     class="field"></span></div>
+                                                            <div class="view view-field edit" data-view-type="edit">
+                                                                <label class="field-label" data-test-name="phoneNumber">
+                                                                    Mobile Number <span class="mandatory">*</span>
+                                                                </label>
+                                                                <ul class="column-element-wrapper tight phone-number-field-list">
+                                                                    <li class="cp-field">
+                                                                        <div class="form-textbox">
+                                                                            <div class="selected-country-prefix">
+                                                                                <i class="icon icon-country-RO"></i>
+                                                                                <span class="country-prefix">+40</span>
+                                                                                <i class="icon-wrapper arrow-down">
+                                                                                    <svg viewBox="0 0 32 32"
+                                                                                         class="icon">
+                                                                                        <use xlink:href="#icon-arrow-down"></use>
+                                                                                    </svg>
+                                                                                </i>
+                                                                            </div>
+                                                                        </div>
+                                                                    </li>
+                                                                    <li class="number-field">
+                                                                        <div class="validation-container valid">
+																  <span class="validation-icon">
+																	 <i class="icon-wrapper success">
+																		<svg viewBox="0 0 32 32" class="icon">
+																		   <use xlink:href="#icon-success"></use>
+																		</svg>
+																	 </i>
+																  </span>
+                                                                            <div class="form-textbox full-width"><input
+                                                                                    th:field="*{mobileNumber}"
+                                                                                    type="number" class="field"
+                                                                                    name="phoneNumber"
+                                                                                    placeholder="07400123456"></div>
+                                                                            <div class="message-container message-box hidden"></div>
+                                                                            <p class="error-message"
+                                                                               th:each="error: ${#fields.errors('mobileNumber')}"
+                                                                               th:text="${error}">Validation error</p>
+                                                                        </div>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                            </ol>
+                                            <button name="continue-registration"
+                                                    class="btn align-right submit-button $buttonTypeClass submitRegistration"
+                                                    type="button">Continue
+                                            </button>
+                                            <ol class="field-list hidden"></ol>
+                                            <div id="captcha-element-725633"></div>
+
+                                        </li>
+
+
+                                        <!-- Part 3 of the Form -->
+                                        <li th:classappend="${#strings.toString(userForm.pageSection)} == 'section-3' ? '' : 'hidden' " class="form-view form-view-3">
+                                            <h3 class="form-view-heading js-inject">Your account is safe with us.</h3>
+                                            <p class="form-view-info js-inject">Help us protect it further by providing
+                                                the following info.</p>
+                                            <div class="message-container hidden"></div>
+                                            <ol class="field-list">
+                                                <li class="field-row field-row-default-hidden">
+                                                    <div class="form-field has-message-box" data-type="Password"
+                                                         data-id="password" data-include-confirm-field="false"
+                                                         data-single-field-default="password" data-mandatory="true"
+                                                         data-reg-exp="^(?=.*(([a-z\\xDF-\\xFF]([A-Z\\xC0-\\xDE]|[\\x20-\\x2F\\x3A-\\x40\\x5B-\\x60\\x7B-\\x7E]|\\d))|([\\x20-\\x2F\\x3A-\\x40\\x5B-\\x60\\x7B-\\x7E]([A-Z\\xC0-\\xDE]|[a-z\\xDF-\\xFF]|\\d))|([A-Z\\xC0-\\xDE]([a-z\\xDF-\\xFF]|\\d|[\\x20-\\x2F\\x3A-\\x40\\x5B-\\x60\\x7B-\\x7E]))|(\\d([A-Z\\xC0-\\xDE]|[a-z\\xDF-\\xFF]|[\\x20-\\x2F\\x3A-\\x40\\x5B-\\x60\\x7B-\\x7E])))).{8,40}$"
+                                                         data-information-message="Use 8-40 characters and at least 1 special character (capital, number or punctuation). Don’t include your name or date of birth."
+                                                         data-error-message="Please try again. Use 8-40 characters and at least 1 special character (capital, number or punctuation). Don’t include your name or date of birth."
+                                                         data-same-password-message="" data-view-mode="edit"
+                                                         data-tracking="0"
+                                                         data-id-registercustomer="authenticationData.password">
+                                                        <div class="view view-field edit" data-view-type="edit">
+                                                            <label class="field-label" data-test-name="password">Password
+                                                                <span class="mandatory">*</span> </label>
+                                                            <div class="validation-container valid">
+														 <span class="validation-icon">
+															<i class="icon-wrapper success">
+															   <svg viewBox="0 0 32 32" class="icon">
+																  <use xlink:href="#icon-success"></use>
+															   </svg>
+															</i>
+														 </span>
+                                                                <div class="form-textbox full-width"><input
+                                                                        type="password" id="password" name="password" placeholder=""
+                                                                        autocomplete="off" class="field"
+                                                                        aria-autocomplete="list"></div>
+                                                                <span data-show="Show" data-hide="Hide" id="viewPassword"
+                                                                      class="btn btn-textbox toggler"> Show </span>
+                                                                <div class="message-container message-box">Use 8-40
+                                                                    characters and at least 1 special character
+                                                                    (capital, number or punctuation). Don’t include your
+                                                                    name or date of birth.
+                                                                </div>
+                                                                <p class="error-message"
+                                                                   th:each="error: ${#fields.errors('password')}"
+                                                                   th:text="${error}">Validation error</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                            </ol>
+                                            <button name="continue-registration"
+                                                    class="btn align-right submit-button $buttonTypeClass"
+                                                    onclick="cms.util.event.publish('registration.closeCountrySelector');">
+                                                Continue
+                                            </button>
+                                            <ol class="field-list hidden"></ol>
+                                            <div id="captcha-element-725633"></div>
+
+
+                                        </li>
+
+
+                                        <!-- Part 4 of the Form -->
+                                        <li th:classappend="${#strings.toString(userForm.pageSection)} == 'section-4' ? '' : 'hidden' " class="form-view form-view-4">
+                                            <h3 class="form-view-heading js-inject">Thank you for registering with us. Now you can log in!</h3>
+
+                                        </li>
+
+                                        <input th:field="*{pageSection}"
+                                               type="hidden" name="pageSection"
+                                               id="pageSection"
+                                               class="field">
+                                    </form>
+                                </ul>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<!--	     <script type="text/javascript" th:src="@{/js/script.js}"></script>-->
+<script src="/js/script.js"></script>
+</body>
+
+
+</html>

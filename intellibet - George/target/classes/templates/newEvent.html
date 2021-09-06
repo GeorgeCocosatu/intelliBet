@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html xmlns:th="thymeleaf.org">
+
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" th:href="@{/css/style.css}"/>
+  <link rel="stylesheet" type="text/css" href="./css/style.css" media="screen">
+  <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+
+</head>
+<!------------------------------------------------->
+<!---      Marked for removal   ->      +++      -->
+<!------------------------------------------------->
+<body class="layout-one-column sportsbetting desktop site-wide">
+<div id="container">
+  <header id="header">
+    <div class="top-container">
+      <div class="header-container">
+        <h1 class="header-controls-heading"
+            title="Online Betting - Sports Bets &amp; Betting Odds">Online Betting - Sports Bets
+          &amp; Betting
+          Odds</h1>
+        <div class="header-controls">
+          <ul class="header-menu">
+            <li class="menu-item">
+              <a href=""
+                 class="has-icon-suffix  external-link ">
+                <span class="text">About Us</span>
+                <i class="icon-wrapper icon-suffix external-link">
+                </i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="bottom-container">
+      <div class="header-container">
+        <h1></h1>
+        <img name="Logo"
+             th:src="@{/img/Logo.png}">
+        <div class="account-container">
+          <div id="login-64127"
+               data-test-name="container-login">
+            <div class="">
+              <div class="widget login">
+                <div class="login-content">
+                  <div class="top-container"></div>
+                  <div style="overflow: hidden; height: 0px; transition: height 400ms ease-out 0s;"></div>
+                  <div class="MainLogin__inline___1STfT">
+                    <div class="MainLogin__headerListContainer___18GWl MainLogin__shrinkRight___2QG_i">
+                      <div>
+                        <div class="Group__vertical___3xm_m Group__root___hnqau Group__tight___2kwl8">
+                          <div class="Group__horizontal___33MBr Group__root___hnqau Group__normal___2vWh8">
+
+                            <form sec:authorize="isAnonymous()" th:action="@{/login}" method="POST">
+                              <div class="Group__horizontal___33MBr Group__root___hnqau Group__none___3J27q">
+                                <div class="_e296pg">
+                                  <div class="_e7hn5">
+                                    <div class="_irsnq7">
+                                      <div class="Fieldstyle__FormField-sc-1gdsmw1-0 dVqUFp">
+                                        <input class="Field-headerstyle__HeaderInput-sc-1p523a3-0 fvfEHO Fieldstyle__Input-sc-1gdsmw1-1 iTCtjl"
+                                               id="ufe_unique_id_1"
+                                               name="username"
+                                               type="email"
+                                               placeholder="Email"
+                                               autocomplete="off"
+                                               value="">
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="_3gspvn">
+                                  <div class="_e7hn5">
+                                    <div class="_irsnq7">
+                                      <div class="fieldContainer">
+                                        <div class="Fieldstyle__FormField-sc-1gdsmw1-0 dVqUFp">
+                                          <input class="Field-headerstyle__HeaderInput-sc-1p523a3-0 fvfEHO Fieldstyle__Input-sc-1gdsmw1-1 beIQrZ"
+                                                 id="ufe_unique_id_2"
+                                                 name="password"
+                                                 type="password"
+                                                 placeholder="Password"
+                                                 autocomplete="off"
+                                                 value="">
+                                        </div>
+                                        <div class="Password__decorator___18BCS">
+                                          <div>
+                                            <a class="_1mki11ol"
+                                               data-test-name="forgot-password">
+																		 <span>
+																		 <span class="ForgotPasswordLink__forgotPassword___FNdCi">Forgot?</span>
+																		 </span>
+                                            </a>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div>
+                                  <button class="_192xn9cNaN"
+                                          data-test-name="btn-login" type="submit">
+														                <span class="_7byueq">
+														                    <span class="_1etkxf1">Log In</span>
+														                </span>
+                                  </button>
+                                </div>
+                              </div>
+
+                            </form>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="bottom-container">
+                      <div sec:authorize="isAnonymous()" class="register-button-container">
+                        <a href="/register" class="_10sdc5fNaN">
+                                                    <span class="_7byueq">
+                                                        <span class="_1etkxf1">Register</span>
+                                                    </span>
+                        </a>
+                      </div>
+                      <div sec:authorize="isAuthenticated()" class="register-button-container">
+                        <a href="/logout" class="_10sdc5fNaN">
+                                                    <span class="_7byueq">
+                                                        <span class="_1etkxf1">Log out</span>
+                                                    </span>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="drawer-bottom"
+         class="drawer hidden">
+      <div class="drawer-arrow"></div>
+      <div class="drawer-content drawer-content-right"></div>
+    </div>
+    <div id="drawerBottom-115461"></div>
+  </header>
+  <div id="navigation-355596" class="widget navigation">
+    <div id="nav-main"
+         class="main-navigation">
+      <nav>
+        <ul class="menu-list product-navigation">
+          <li class="list-item  has-sub ">
+            <a href="/home"
+               class="has-icon-prefix link-item"
+               title="Home">
+              <i class="icon-wrapper icon-prefix sportsbook">
+              </i>
+              <span class="text">Home</span>
+            </a>
+          </li>
+
+          <li class="list-item">
+            <a href="/myBets"
+               class="has-icon-prefix link-item"
+               title="My Bets">
+              <i class="icon-wrapper icon-prefix casino">
+              </i>
+              <span class="text">My Bets</span>
+            </a>
+          </li>
+
+          <li class="list-item">
+            <a href="/myAccount"
+               class="has-icon-prefix link-item"
+               title="My Account">
+              <i class="icon-wrapper icon-prefix horse-racing">
+              </i>
+              <span class="text">My Account</span>
+            </a>
+          </li>
+          <li class="list-item active">
+            <a href="/newEvent"
+               class="has-icon-prefix link-item"
+               title="Admin">
+              <i class="icon-wrapper icon-prefix live-casino-wheel">
+              </i>
+              <span class="text">Admin</span>
+            </a>
+          </li>
+
+        </ul>
+        <ul class="menu-list misc-navigation">
+
+
+
+        </ul>
+      </nav>
+    </div>
+    <!--   <div id="nav-sub"
+            class="sub-navigation">
+           <nav>
+               <ul class="nav-list">
+                   <li class="list-item">
+                       <a href="/betting/sports"
+                          class="link-item"
+                          title="Sports Betting">Sports Betting</a>
+                   </li>
+                   <li class="list-item">
+                       <a href="/betting/virtualsports/euro-cup"
+                          class="has-icon-suffix link-item"
+                          title="Virtual Sports">
+                           <span class="text">Virtual Sports</span>
+                           <i class="icon-suffix">
+                               <span class="badge-text new">New</span>
+                           </i>
+                       </a>
+                   </li>
+                   <li class="list-item">
+                       <a href="https://s5.sir.sportradar.com/unibet/en"
+                          class="automated link-item"
+                          title="Statistics &amp; Livescore"
+                          data-width="-1"
+                          data-height="-1"
+                          data-automated-function="popup">Statistics &amp; Livescore</a>
+                   </li>
+                   <li class="list-item">
+                       <a href="/betting/sponsors"
+                          class="link-item"
+                          title="Sponsors">Sponsors</a>
+                   </li>
+                   <li class="list-item">
+                       <a href="/betting/guides"
+                          class="link-item"
+                          title="Betting Guide">Betting Guide</a>
+                   </li>
+               </ul>
+           </nav>
+       </div>-->
+  </div>
+
+
+  <div id="content">
+    <div id="main-wrapper">
+      <div id="main" role="main">
+        <div class="main-container">
+          <div id="column-primary" class="page-column">
+            <article class="widget multi-page-registration-form"
+                     id="multi-page-registration-form-725633">
+              <div class="header-image">
+                <h2 class="heading">Enter the event details!</h2>
+              </div>
+
+              <div id="registrationFields-725633" style="display:block;">
+                <div class="form-nav-wrapper">
+
+                </div>
+                <ul class="form-view-list">
+                  <form th:object="${eventForm}" th:action="@{/newEvent}" method="post" class="form"
+                        novalidate="novalidate">
+
+                    <li class="form-view form-view-1">
+                      <h3 class="form-view-heading js-inject">
+                      </h3>
+
+                      <div class="message-container hidden"></div>
+                      <ol class="field-list">
+
+                        <!-- this is a line in the form: line 1 -->
+                        <li class="field-row field-row-default-hidden">
+                          <fieldset class="form-field">
+                            <p class="error-message"
+                               th:each="error: ${#fields.errors('global')}"
+                               th:text="${error}">Validation error</p>
+                            <div class="view view-group edit">
+                              <div class="field-group">
+                                <div class="group-field size1of2">
+                                  <div class="form-field">
+                                    <div class="view view-field edit">
+                                      <label class="field-label">Team or Player A</label>
+                                      <div class="validation-container">
+                                         <span class="validation-icon">
+                                          <i class="icon-wrapper success">
+                                             <svg viewBox="0 0 32 32" class="icon">
+                                              <use xlink:href="#icon-success"></use>
+                                             </svg>
+                                          </i>
+                                         </span>
+                                        <div class="form-textbox full-width">
+
+                                          <input th:field="*{playerA}" type="text" name="playerA"
+                                                 id="playerA" placeholder="Home team/player"
+                                                 class="field"></div>
+                                        <div class="message-container message-box hidden">
+                                        </div>
+                                        <p class="error-message"
+                                           th:each="error: ${#fields.errors('playerA')}"
+                                           th:text="${error}">Validation error</p>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="group-field size1of2">
+                                  <div class="form-field">
+                                    <div class="view view-field edit">
+                                      <label class="field-label"
+                                             data-test-name="lastName">Team or Player B</label>
+                                      <div class="validation-container valid">
+                                         <span class="validation-icon">
+                                          <i class="icon-wrapper success">
+                                             <svg viewBox="0 0 32 32" class="icon">
+                                              <use xlink:href="#icon-success"></use>
+                                             </svg>
+                                          </i>
+                                         </span>
+                                        <div class="form-textbox full-width">
+                                          <input th:field="*{playerB}" type="text" name="playerB"
+                                                 id="playerB" placeholder="Guest team/player"
+                                                 class="field">
+                                        </div>
+                                        <div class="message-container message-box hidden"></div>
+                                        <p class="error-message"
+                                           th:each="error: ${#fields.errors('playerB')}"
+                                           th:text="${error}">Validation
+                                          error</p>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </fieldset>
+                        </li>
+
+                        <!-- this is a line in the form: line 2 -->
+                        <li class="field-row field-row-default-hidden">
+                          <fieldset class="form-field">
+                            <div class="view view-group edit">
+                              <div class="field-group">
+                                <div class="group-field size1of2">
+                                  <div class="form-field">
+                                    <div class="view view-field edit">
+                                      <label class="field-label">Date</label>
+                                      <div class="validation-container">
+                                         <span class="validation-icon">
+                                          <i class="icon-wrapper success">
+                                             <svg viewBox="0 0 32 32" class="icon">
+                                              <use xlink:href="#icon-success"></use>
+                                             </svg>
+                                          </i>
+                                         </span>
+                                        <div class="form-textbox full-width">
+
+                                          <input th:field="*{date}" type="date" name="date"
+                                                 id="date" class="field"></div>
+                                        <div class="message-container message-box hidden">
+                                        </div>
+                                        <p class="error-message"
+                                           th:each="error: ${#fields.errors('date')}"
+                                           th:text="${error}">Validation error</p>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="group-field size1of2">
+                                  <div class="form-field">
+                                    <div class="view view-field edit">
+                                      <label class="field-label"
+                                             data-test-name="lastName"> <span>Time</span></label>
+                                      <div class="validation-container valid">
+                                         <span class="validation-icon">
+                                          <i class="icon-wrapper success">
+                                             <svg viewBox="0 0 32 32" class="icon">
+                                              <use xlink:href="#icon-success"></use>
+                                             </svg>
+                                          </i>
+                                         </span>
+                                        <div class="form-textbox full-width">
+                                          <input th:field="*{time}" type="time" name="time"
+                                                 id="time" class="field">
+                                        </div>
+                                        <div class="message-container message-box hidden"></div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </fieldset>
+                        </li>
+
+                        <!-- this is a line in the form: line 3 -->
+                        <li class="field-row field-row-default-hidden">
+                          <fieldset class="form-field">
+                            <div class="view view-group edit">
+                              <div class="field-group">
+                                <div class="group-field size1of2">
+                                  <div class="form-field">
+                                    <div class="view view-field edit">
+                                      <label class="field-label">Category</label>
+                                      <div class="validation-container">
+                                         <span class="validation-icon">
+                                          <i class="icon-wrapper success">
+                                             <svg viewBox="0 0 32 32" class="icon">
+                                              <use xlink:href="#icon-success"></use>
+                                             </svg>
+                                          </i>
+                                         </span>
+
+                                        <div class="form-textbox full-width">
+                                          <select class="form-control selectpicker" th:field="*{category}" id="category">
+                                            <option value="" selected>Please Choose...</option>
+                                            <option th:each="category : ${T(com.intellibet.model.EventCategory).values()}"
+                                                    th:value="${category}"
+                                                    th:text="${category}">
+                                            </option>
+
+                                          </select>
+
+
+                                        </div>
+                                        <div class="message-container message-box hidden">
+                                        </div>
+                                        <p class="error-message"
+                                           th:each="error: ${#fields.errors('category')}"
+                                           th:text="${error}">Validation error</p>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+
+                              </div>
+                            </div>
+                          </fieldset>
+                        </li>
+
+
+                        <!-- this is a line in the form: line 4 -->
+                        <li class="field-row field-row-default-hidden">
+                          <fieldset class="form-field">
+                            <div class="view view-group edit">
+                              <div class="field-group">
+                                <div class="group-field centered size1of3">
+                                  <div class="form-field">
+                                    <div class="view view-field edit">
+                                      <label class="field-label">1</label>
+                                      <div class="validation-container">
+                                         <span class="validation-icon">
+                                          <i class="icon-wrapper success">
+                                             <svg viewBox="0 0 32 32" class="icon">
+                                              <use xlink:href="#icon-success"></use>
+                                             </svg>
+                                          </i>
+                                         </span>
+                                        <div class="form-textbox full-width">
+
+                                          <input th:field="*{oddA}" type="number" name="oddA"
+                                                 id="oddA" placeholder="Odds for A to win" min="1"
+                                                 class="field"></div>
+                                        <div class="message-container message-box hidden">
+                                        </div>
+                                        <p class="error-message"
+                                           th:each="error: ${#fields.errors('oddA')}"
+                                           th:text="${error}">Validation error</p>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+
+                                <div class="group-field centered size1of3">
+                                  <div class="form-field">
+                                    <div class="view view-field edit">
+                                      <label class="field-label"
+                                             data-test-name="lastName">X</label>
+                                      <div class="validation-container valid">
+                                         <span class="validation-icon">
+                                          <i class="icon-wrapper success">
+                                             <svg viewBox="0 0 32 32" class="icon">
+                                              <use xlink:href="#icon-success"></use>
+                                             </svg>
+                                          </i>
+                                         </span>
+                                        <div class="form-textbox full-width">
+                                          <input th:field="*{oddX}" type="number" name="oddX"
+                                                 id="oddX" placeholder="Odds for a draw" min="1"
+                                                 class="field">
+                                        </div>
+                                        <div class="message-container message-box hidden"></div>
+                                        <p class="error-message"
+                                           th:each="error: ${#fields.errors('oddB')}"
+                                           th:text="${error}">Validation
+                                          error</p>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+
+                                <div class="group-field centered size1of3">
+                                  <div class="form-field">
+                                    <div class="view view-field edit">
+                                      <label class="field-label"
+                                             data-test-name="lastName">2</label>
+                                      <div class="validation-container valid">
+                                         <span class="validation-icon">
+                                          <i class="icon-wrapper success">
+                                             <svg viewBox="0 0 32 32" class="icon">
+                                              <use xlink:href="#icon-success"></use>
+                                             </svg>
+                                          </i>
+                                         </span>
+                                        <div class="form-textbox full-width">
+                                          <input th:field="*{oddB}" type="number" name="oddB"
+                                                 id="oddB" placeholder="Odds for B to win" min="1"
+                                                 class="field">
+                                        </div>
+                                        <div class="message-container message-box hidden"></div>
+                                        <p class="error-message"
+                                           th:each="error: ${#fields.errors('oddX')}"
+                                           th:text="${error}">Validation
+                                          error</p>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </fieldset>
+                        </li>
+
+                      </ol>
+                      <button name="continue-registration"
+                              class="btn align-right submit-button $buttonTypeClass submitNewEvent"
+                              type="submit">Submit
+                      </button>
+
+                    </li>
+
+                  </form>
+                </ul>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<!--	     <script type="text/javascript" th:src="@{/js/script.js}"></script>-->
+<script src="/js/script.js"></script>
+</body>
+
+
+</html>

@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html xmlns:th="thymeleaf.org"
+      xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
+
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" th:href="@{/css/style.css}"/>
+    <link rel="stylesheet" type="text/css" href="./css/style.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="./css/home.css" media="screen">
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+
+</head>
+<!------------------------------------------------->
+<!---      Marked for removal   ->      +++      -->
+<!------------------------------------------------->
+<body class="layout-one-column sportsbetting desktop site-wide">
+<div id="container">
+    <header id="header">
+        <div class="top-container">
+            <div class="header-container">
+                <h1 class="header-controls-heading"
+                    title="Online Betting - Sports Bets &amp; Betting Odds">Online Betting - Sports Bets &amp; Betting
+                    Odds</h1>
+                <div class="header-controls">
+                    <ul class="header-menu">
+                        <li class="menu-item">
+                            <a href=""
+                               class="has-icon-suffix  external-link ">
+                                <span class="text">About Us</span>
+                                <i class="icon-wrapper icon-suffix external-link">
+                                </i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="bottom-container">
+            <div class="header-container">
+                <h1></h1>
+                <img name="Logo"
+                     th:src="@{/img/Logo.png}">
+                <div class="account-container">
+                    <div id="login-64127"
+                         data-test-name="container-login">
+                        <div class="">
+                            <div class="widget login">
+                                <div class="login-content">
+                                    <div class="top-container"></div>
+                                    <div style="overflow: hidden; height: 0px; transition: height 400ms ease-out 0s;"></div>
+                                    <div class="MainLogin__inline___1STfT">
+                                        <div class="MainLogin__headerListContainer___18GWl MainLogin__shrinkRight___2QG_i">
+                                            <div>
+                                                <div class="Group__vertical___3xm_m Group__root___hnqau Group__tight___2kwl8">
+                                                    <div class="Group__horizontal___33MBr Group__root___hnqau Group__normal___2vWh8">
+
+                                                        <form sec:authorize="isAnonymous()" th:action="@{/login}" method="POST">
+                                                            <div class="Group__horizontal___33MBr Group__root___hnqau Group__none___3J27q">
+                                                                <div class="_e296pg">
+                                                                    <div class="_e7hn5">
+                                                                        <div class="_irsnq7">
+                                                                            <div class="Fieldstyle__FormField-sc-1gdsmw1-0 dVqUFp">
+                                                                                <input class="Field-headerstyle__HeaderInput-sc-1p523a3-0 fvfEHO Fieldstyle__Input-sc-1gdsmw1-1 iTCtjl"
+                                                                                       id="ufe_unique_id_1"
+                                                                                       name="username"
+                                                                                       type="email"
+                                                                                       placeholder="Email"
+                                                                                       autocomplete="off"
+                                                                                       value="">
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="_3gspvn">
+                                                                    <div class="_e7hn5">
+                                                                        <div class="_irsnq7">
+                                                                            <div class="fieldContainer">
+                                                                                <div class="Fieldstyle__FormField-sc-1gdsmw1-0 dVqUFp">
+                                                                                    <input class="Field-headerstyle__HeaderInput-sc-1p523a3-0 fvfEHO Fieldstyle__Input-sc-1gdsmw1-1 beIQrZ"
+                                                                                           id="ufe_unique_id_2"
+                                                                                           name="password"
+                                                                                           type="password"
+                                                                                           placeholder="Password"
+                                                                                           autocomplete="off"
+                                                                                           value="">
+                                                                                </div>
+                                                                                <div class="Password__decorator___18BCS">
+                                                                                    <div>
+                                                                                        <a class="_1mki11ol"
+                                                                                           data-test-name="forgot-password">
+																		 <span>
+																		 <span class="ForgotPasswordLink__forgotPassword___FNdCi">Forgot?</span>
+																		 </span>
+                                                                                        </a>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div>
+                                                                    <button class="_192xn9cNaN"
+                                                                            data-test-name="btn-login" type="submit">
+														                <span class="_7byueq">
+														                    <span class="_1etkxf1">Log In</span>
+														                </span>
+                                                                    </button>
+                                                                </div>
+                                                            </div>
+
+                                                        </form>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="bottom-container">
+                                            <div sec:authorize="isAnonymous()" class="register-button-container">
+                                                <a href="/register" class="_10sdc5fNaN">
+                                                    <span class="_7byueq">
+                                                        <span class="_1etkxf1">Register</span>
+                                                    </span>
+                                                </a>
+                                            </div>
+                                            <div sec:authorize="isAuthenticated()" class="register-button-container">
+                                                <a href="/logout" class="_10sdc5fNaN">
+                                                    <span class="_7byueq">
+                                                        <span class="_1etkxf1">Log out</span>
+                                                    </span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="drawer-bottom"
+             class="drawer hidden">
+            <div class="drawer-arrow"></div>
+            <div class="drawer-content drawer-content-right"></div>
+        </div>
+        <div id="drawerBottom-115461"></div>
+    </header>
+    <div id="navigation-355596" class="widget navigation">
+        <div id="nav-main"
+             class="main-navigation">
+            <nav>
+                <ul class="menu-list product-navigation">
+                    <li class="list-item has-sub ">
+                        <a href="/home"
+                           class="has-icon-prefix link-item"
+                           title="Home">
+                            <i class="icon-wrapper icon-prefix sportsbook">
+                            </i>
+                            <span class="text">Home</span>
+                        </a>
+                    </li>
+
+                    <li sec:authorize="isAuthenticated()" class="list-item">
+                        <a href="/myBets"
+                           class="has-icon-prefix link-item"
+                           title="My Bets">
+                            <i class="icon-wrapper icon-prefix casino">
+                            </i>
+                            <span class="text">My Bets</span>
+                        </a>
+                    </li>
+
+                    <li sec:authorize="isAuthenticated()" class="list-item active">
+                        <a href="/myAccount"
+                           class="has-icon-prefix link-item"
+                           title="My Account">
+                            <i class="icon-wrapper icon-prefix horse-racing">
+                            </i>
+                            <span class="text">My Account</span>
+                        </a>
+                    </li>
+                    <li sec:authorize="isAuthenticated()" class="list-item">
+                        <a href="/newEvent"
+                           class="has-icon-prefix link-item"
+                           title="Admin">
+                            <i class="icon-wrapper icon-prefix live-casino-wheel">
+                            </i>
+                            <span class="text">Admin</span>
+                        </a>
+                    </li>
+                    <li sec:authorize="isAnonymous()" class="list-item">
+                        <a href="/register"
+                           class="has-icon-prefix link-item"
+                           title="Admin">
+                            <i class="icon-wrapper icon-prefix live-casino-wheel">
+                            </i>
+                            <span class="text">Register</span>
+                        </a>
+                    </li>
+
+                </ul>
+                <ul class="menu-list misc-navigation">
+
+
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <section id="main-content">
+
+        <!-- Events -->
+        <section class="page-content" name="categories">
+            <div class="category-column">
+                <h2>Category</h2>
+                <p th:each="category : ${T(com.intellibet.model.EventCategory).values()}" th:text="${category}"></p>
+            </div>
+        </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <section class="page-content" name="myAccount">
+            <div id="ProfilePage">
+                <div class="page-header">
+                    <div class="page-header-top subpage_16">
+                        <div class="pageName">Wallet and bonuses</div>
+                        <div class="clear"></div>
+                    </div>
+                    <div class="pageDescription">
+                        <div class="description">Account balance</div>
+                    </div>
+                </div>
+                <div>
+                    <div id="wallet">
+                        <div class="total">
+
+                            <div class="value">
+                                  <span th:text="${depositForm.balance}">
+                            <!--    <small class="SmallDecimal">,42</small>-->
+
+                                </span>
+                                <span>Ron</span>
+                                </div>
+                            <div class="description">Total value</div>
+                        </div>
+                        <div class="MainWallet">
+                            <div class="money-widget real" id="money-widget-container_899868686316833">
+                                <div class="col-3">
+                                    <div id="money-widget-icon_899868686316833" class="" style="width: 56px; height: 64px;">
+                                        <svg class="IconSVG real-money-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 55.34 48.99"><g><g><path class="fillMe" d="M20.62,15.31A3.44,3.44,0,0,1,18,13.71a4.52,4.52,0,0,1-.46-2.25H19a4,4,0,0,0,.36,1.64,2.19,2.19,0,0,0,1.91,1.05V9.66a5.41,5.41,0,0,1-2.64-1.13,2.81,2.81,0,0,1-.86-2.19,3.32,3.32,0,0,1,3.5-3.29V2h.78V3A3.87,3.87,0,0,1,24.6,4a3.13,3.13,0,0,1,.92,2.24H24.08a2.64,2.64,0,0,0-.34-1.08,1.92,1.92,0,0,0-1.66-.87v4a10,10,0,0,1,2.6,1,2.62,2.62,0,0,1,1.11,2.3,3.44,3.44,0,0,1-1.42,3.11,4.67,4.67,0,0,1-1.61.54,22.17,22.17,0,0,1,5.61.93,9.49,9.49,0,1,0-13.21.15,21.61,21.61,0,0,1,5.46-1Z"></path><path class="fillMe" d="M19.84,7.52a3.12,3.12,0,0,0,1.47.64V4.28A1.92,1.92,0,0,0,19.76,5a2.05,2.05,0,0,0-.47,1.29,1.58,1.58,0,0,0,.55,1.28Z"></path><path class="fillMe" d="M23.55,10.45a4.94,4.94,0,0,0-1.46-.59v4.33a2.15,2.15,0,0,0,1.94-1A2.26,2.26,0,0,0,24.32,12a1.8,1.8,0,0,0-.77-1.57Z"></path><path class="fillMe" d="M54.19,34.39c1.15-1.21,1.26-3.46,1.08-6.45-1.37-.09-3.37.14-4.09,0a16,16,0,0,0-7.72-7.72c.12-2.24.41-4.31,1.71-5.38-3.14-.21-5.81,1.92-7.51,3.87A16,16,0,0,0,31.22,15l-1.66,2.93A23.13,23.13,0,0,0,14.37,18l-2.16-2.9,0,0a21.41,21.41,0,0,0-8.88,5.38c-1.57-.12-1.39-3.3.64-2.79C.65,15.38-1.19,21.57,2,22.36c-2.67,3.82-2.93,12,.65,15C3.19,41.9,4,46.15,6.19,49H13.4a20.82,20.82,0,0,1-.22-4.74A49.9,49.9,0,0,0,28,45.11,33.29,33.29,0,0,0,30.54,49h7.14a14.8,14.8,0,0,1,0-5.82c1.72-.32,10.56-2.56,16.54-8.78ZM44.34,24.8a1.78,1.78,0,1,1-1.78,1.77,1.77,1.77,0,0,1,1.78-1.77Z"></path></g></g></svg>
+                                    </div>
+                                </div>
+                                <div class="col-9" id="money-widget-value_899868686316833" style="opacity: 1;">
+                                    <div class="title">Money</div>
+                                    <div class="value" id="money-widget-value-item_899868686316833" style="opacity: 1; font-size: 33px;">
+                                        <span th:text="${depositForm.balance}"> </span>
+                                     <!--       <small class="SmallDecimal">,42</small>
+                                     -->
+                                            <span>Ron</span>
+
+                                        </div>
+                                </div>
+                                <div class="clearfix">&nbsp;</div>
+                                <div class="col-3">&nbsp;</div>
+                                <div class="col-9">
+                                    <div class="buttons">
+                                        <div class="PendingContent">
+                                            <div class="PendingProducts">
+                                                <div class="ProductItem"><span class="LinkStyle">No pending withdrawals</span></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="money-widget bonus" id="money-widget-container_5120349237090403">
+                                <div class="col-3">
+                                    <div id="money-widget-icon_5120349237090403" class="" style="width: 40px; height: 48px;">
+                                        <svg class="IconSVG bonus-money-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 37.02 47.12"><g><g><polygon class="fillMe" points="10.08 23.46 10.04 47.09 18.5 41.57 26.95 47.12 26.98 23.49 10.08 23.46"></polygon><circle class="fillMe" cx="18.51" cy="18.51" r="18.51"></circle><path class="fillMe" d="M18.51,33.33A14.82,14.82,0,1,1,33.33,18.51,14.83,14.83,0,0,1,18.51,33.33Z" style="stroke: rgb(255, 255, 255); stroke-miterlimit: 10; stroke-width: 0.99px;"></path><path class="fillMe" d="M27.74,15.58H21.31l-2-6.11a.85.85,0,0,0-1.62,0l-2,6.11H9.29a.86.86,0,0,0-.5,1.55L14,20.91,12,27a.85.85,0,0,0,1.31.95l5.2-3.78L23.71,28A.85.85,0,0,0,25,27l-2-6.11,5.2-3.78A.86.86,0,0,0,27.74,15.58Z" style="fill: rgb(255, 255, 255);"></path></g></g></svg>
+                                    </div>
+                                </div>
+                                <div class="col-9" id="money-widget-value_5120349237090403" style="opacity: 1;">
+                                    <div class="title">Bonus</div>
+                                    <div class="value" id="money-widget-value-item_5120349237090403" style="opacity: 1; font-size: 33px;">
+                                        <span>0<small class="SmallDecimal">,00</small> Ron</span>
+                                        <div id="money-widget-popover_5120349237090403" class="right popover-money-widget" style="margin-top: -35px;">
+                                            <svg version="1.1" class="IconSVG green-info" x="0px" y="0px" viewBox="0 0 23.775 23.700001" id="svg1637" width="23.775" height="23.700001">
+                                                <g id="SignIn-455dr" transform="translate(-1236.05,-1012.95)">
+                                                    <rect x="962.09998" y="1019.6" class="st7" width="161.10001" height="10.5" id="rect1530" style="fill: none;"></rect>
+                                                    <g id="g1544" transform="translate(104,240)">
+                                                        <g id="g1540">
+                                                        </g>
+
+                                                    </g>
+                                                </g>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="clearfix">&nbsp;</div>
+                                <div class="col-3">&nbsp;</div>
+                                <div class="col-9">
+                                    <div class="buttons">
+                                        <div class="BonusProducts">
+                                            <div class="ProductItem">
+                                                <p>Casino</p>
+                                                <p><span>0<small class="SmallDecimal">,00</small> Ron</span></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="WalletButtons">
+                            <a href="#" class="btn">Withdraw</a>
+                            <a id="depositButton" href="#" class="btn outer">Deposit</a></div>
+                        <div class="clearfix"> </div>
+
+                        <div class="deposit" >
+
+                            <form th:object="${depositForm}" th:action="@{/deposit}" method="post" class="form"
+                                  novalidate="novalidate">
+                            <ol class="field-list">
+
+                                <!-- this is a line in the form: line 1 -->
+                                <li class="field-row field-row-default-hidden">
+                                    <fieldset class="form-field">
+                                        <p class="error-message"
+                                           th:each="error: ${#fields.errors('global')}"
+                                           th:text="${error}">Validation error</p>
+                                        <div class="view view-group edit">
+                                            <div class="field-group custom">
+
+                                                <div class="group-field">
+                                                    <div class="form-field">
+                                                        <div class="view view-field edit">
+                                                            <label class="field-label">Please enter the amount you want to deposit</label>
+                                                            <div class="validation-container">
+                                         <span class="validation-icon">
+                                          <i class="icon-wrapper success">
+                                             <svg viewBox="0 0 32 32" class="icon">
+                                              <use xlink:href="#icon-success"></use>
+                                             </svg>
+                                          </i>
+                                         </span>
+                                                                <div class="form-textbox full-width">
+
+                                                                    <input th:field="*{amount}" type="number" min="1" name="amount"
+                                                                           id="amount" placeholder="Amount in RON" class="field">
+
+                                                                </div>
+                                                                <div class="message-container message-box hidden">
+                                                                </div>
+
+
+                                                                <p class="error-message"
+                                                                   th:each="error: ${#fields.errors('amount')}"
+                                                                   th:text="${error}">Validation error</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="group-field">
+                                                    <div class="form-field">
+                                                        <div class="view view-field edit">
+                                                            <div class="validation-container">
+
+                                                                <div class="form-textbox full-width">
+                                                                    <button class="btn align-right submit-button $buttonTypeClass submitDeposit"
+                                                                            type="submit">Deposit!
+                                                                    </button>
+                                                                   </div>
+
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </fieldset>
+                                </li>
+
+                            </ol>
+                            </form>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </section>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<!--	     <script type="text/javascript" th:src="@{/js/script.js}"></script>-->
+<script src="/js/script.js"></script>
+</body>
+
+
+</html>

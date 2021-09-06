@@ -1,0 +1,1243 @@
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.main-content {
+  padding: 16px;
+}
+
+.sticky + .main-content {
+  padding-top: 60px;
+}
+
+
+
+
+
+
+section div .arrows {
+    position: absolute;
+    padding-left: 25px;
+    padding-top: 100px;
+    font-size: 30px;
+    -webkit-transform: scale(1, 1.6);
+}
+section div .arrows #arrow-next {
+    padding-left: 1800px;
+}
+
+div .home-top-title {
+    background-image: url("../img/Dice.jpg");
+    background-position: center;
+    height: 480px;
+    color: #d8d8d8;
+    padding-top: 50px;
+}
+div .title-in-card{
+    font-family: Roboto, Helvetica Neue, sans-serif;
+    font-size: 35px;
+    line-height: 30px;
+    padding-left: 80px;
+}
+
+div .title-in-card span{
+    font-family: Roboto, Helvetica Neue, sans-serif;
+    font-size: 16px;
+    line-height: 30px;
+}
+
+#home-top-registerButton {
+    margin-top: 20px;
+}
+
+
+
+
+
+                                                        /*<<< The content >>>*/
+
+
+body {
+    background: rgba(50, 50, 50, 0.2);
+}
+
+section.page-content {
+    margin-top: 2%;
+}
+
+section div.main-content {
+    margin: 0 1%;
+}
+
+section div.category-column {
+    margin-left: 5%;
+    margin-right: 3%;
+    float: left;
+    width: 12%;
+    padding: 10px;
+    height: 1500px;
+    background: #333333;
+    color: white;
+}
+section div.category-column h2{
+
+    padding-bottom: 3%;
+}
+section div.category-column p{
+    border-bottom: #585858 solid 1px;
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+
+section div.event-column {
+    margin: 0 0.5%;
+    float: left;
+    width: 25%;
+    background-color:whitesmoke;
+}
+
+section div.event-column-head {
+    color: #d8d8d8;
+    background: #333333;
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+    padding: 1% 0 1% 5%;
+}
+
+section div.event-item {
+    border-bottom: solid 1px rgba(0, 0, 0, 0.2);
+    padding: 3%;
+    height: 100%;
+    color: #999999;
+}
+
+section div p.event-item-head {
+    padding-bottom: 5%;
+}
+
+section div p span.event-text-right {
+    display:block;
+    float:right;
+    margin-left:0.8%;
+}
+
+section div.left-column {
+    /*margin: 0 0.5%;*/
+    position: relative;
+    float: left;
+    text-align: left;
+    width: 20%;
+}
+
+section div.right-column {
+    overflow: hidden;
+    text-align: right;
+    margin: 0;
+}
+
+section div.right-column div.inner-right-column-left {
+    position: relative;
+    float: left;
+    text-align: right;
+    width: 50%;
+}
+section div.right-column div.inner-right-column-right {
+    position: relative;
+    float: right;
+    text-align: center;
+    padding-left: 10px;
+    width: 50%;
+}
+
+section div.right-column>button {
+    width: 90px;
+    background: #0e5f31;
+    border: white 2px solid;
+    color: white;
+    text-shadow: white;
+    height: 25px;
+    border-radius: 15%;
+}
+section div.right-column>button:hover {
+    background: #1cbc66;
+
+    text-shadow: white;
+}
+
+/* FIX */
+
+section div.category-column {
+    float: none;
+    width: auto;
+    height: auto;
+    padding-bottom: 200px;
+    margin-left: auto;
+    margin-top: auto;
+    padding-left: 20px;
+    padding-top: 40px;
+    padding-right: 20px;
+}
+section.page-content[name="categories"] {
+    width: 15%;
+    float: left;
+}
+
+#ProfilePage .page-header .page-header-top .pageName {
+    display: inline-block;
+    text-align: left;
+    padding-left: 3rem;
+    text-transform: uppercase;
+    color: #017048;
+    font-weight: 700;
+    font-size: 14px;
+}
+#ProfilePage .page-header .page-header-top {
+    display: block;
+    width: 100%;
+    text-align: left;
+}
+#ProfilePage .page-header {
+    padding-bottom: 70px;
+    padding-top: 50px;
+}
+#ProfilePage .page-header .page-header-top .clear {
+    /*clear: both;*/
+}
+#ProfilePage .page-header .pageDescription {
+    text-align: left;
+    padding-left: 3rem;
+}
+#ProfilePage .page-header .pageDescription .description {
+    font-size: 12px;
+    color: gray;
+    text-transform: capitalize;
+}
+section.page-content {
+    margin-top: auto;
+}
+
+#wallet, #wallet .WalletButtons {
+    display: -ms-flexbox;
+    display: flex;
+}
+#wallet {
+    -ms-flex-direction: column;
+    flex-direction: column;
+    padding: .2rem 2.5rem 3rem;
+}
+#wallet .total {
+    border-bottom: 2px solid #ccc;
+    text-align: center;
+}
+#wallet .total .value {
+    font-size: 3.2rem;
+    font-weight: 700;
+    line-height: 1;
+}
+#wallet .total .value small {
+    font-weight: inherit;
+    font-size: 60%;
+    color: gray;
+}
+#wallet .total .description {
+    color: gray;
+    margin-bottom: 20px;
+}
+
+section.page-content[name="myAccount"] {
+    float: right;
+    width: 85%;
+    background-color: white;
+}
+#wallet .money-widget.real {
+    border-right: 2px solid #ccc;
+}
+#wallet .money-widget {
+    text-align: left;
+    width: 50%;
+    float: left;
+    padding: 2.8rem 0 3.35rem .5rem;
+    min-height: 310px;
+}
+#wallet .col-3 {
+    width: 25%;
+    float: left;
+}
+.col-3 {
+    -ms-flex: 0 0 25%;
+    flex: 0 0 25%;
+    max-width: 25%;
+}
+
+
+
+
+
+img, svg {
+    vertical-align: middle;
+}
+svg:not(:root) {
+    overflow: hidden;
+}
+#wallet .money-widget .col-3 .IconSVG {
+    margin-left: 65%;
+    margin-top: .31rem;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+#wallet .money-widget .col-3 .IconSVG.real-money-icon {
+    margin-left: 40%;
+    margin-top: 0;
+}
+#wallet .money-widget .col-3 .IconSVG .fillMe {
+    fill: #ccc;
+}
+
+#wallet .col-9 {
+    width: 75%;
+    float: left;
+}
+constructed stylesheet
+.col-9 {
+    -ms-flex: 0 0 75%;
+    flex: 0 0 75%;
+    max-width: 75%;
+}
+#wallet .money-widget.real .title {
+    color: #007048;
+}
+constructed stylesheet
+#wallet .money-widget .title {
+    font-weight: 600;
+    font-size: 1rem;
+    text-transform: capitalize;
+}
+
+#wallet .money-widget .value {
+    font-weight: 700;
+    font-size: 2.1rem;
+    line-height: 1;
+    padding-bottom: .825rem;
+    display: inline-block;
+    padding-right: 35px;
+}
+#wallet .money-widget .value small {
+    font-weight: inherit;
+    font-size: 60%;
+    color: gray;
+}
+
+#wallet .col-3 {
+    width: 25%;
+    float: left;
+}
+constructed stylesheet
+.col-3 {
+    -ms-flex: 0 0 25%;
+    flex: 0 0 25%;
+    max-width: 25%;
+}
+#wallet .money-widget .title {
+    font-weight: 600;
+    font-size: 1rem;
+    text-transform: capitalize;
+}
+.col-9 {
+    -ms-flex: 0 0 75%;
+    flex: 0 0 75%;
+    max-width: 75%;
+}
+#wallet .money-widget .buttons {
+    padding-top: .825rem;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    width: 90%;
+}
+#wallet .money-widget .buttons .PendingContent, #wallet .money-widget .buttons .PendingContent .PendingProducts {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-flex-align: center;
+    align-items: center;
+    width: 100%;
+}
+#wallet .money-widget .buttons .PendingContent .PendingProducts {
+    min-height: 60px;
+    border-top: 1px solid #acacac;
+    padding: 10px 0 0;
+}
+constructed stylesheet
+#wallet .money-widget .buttons .PendingContent, #wallet .money-widget .buttons .PendingContent .PendingProducts {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-flex-align: center;
+    align-items: center;
+    width: 100%;
+}
+#wallet .money-widget .buttons .PendingContent .PendingProducts .ProductItem .LinkStyle {
+    color: #004085;
+    text-decoration: underline;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+}
+#wallet .money-widget .buttons .PendingContent .PendingProducts .ProductItem:last-of-type {
+    margin-bottom: 0;
+}
+constructed stylesheet
+#wallet .money-widget .buttons .PendingContent .PendingProducts .ProductItem {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-flex-align: center;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 3px;
+}
+
+#wallet .money-widget.bonus .title {
+    color: #9b36aa;
+}
+
+#wallet .money-widget .value {
+    font-weight: 700;
+    font-size: 2.1rem;
+    line-height: 1;
+    padding-bottom: .825rem;
+    display: inline-block;
+    padding-right: 35px;
+}
+#wallet .money-widget .buttons .BonusProducts {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-flex-align: center;
+    align-items: center;
+    width: 100%;
+    height: 60px;
+    margin-bottom: 10px;
+    border-top: 1px solid #acacac;
+    padding-top: 20px;
+}
+#wallet .money-widget .buttons .BonusProducts .ProductItem {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -ms-flex-align: center;
+    align-items: center;
+    width: 100%;
+}
+#wallet .money-widget .buttons .BonusProducts .ProductItem p {
+    color: #777;
+    font-size: 14px;
+    font-weight: 500;
+    margin: 0;
+    padding: 0;
+}
+#wallet .WalletButtons {
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    padding: 20px 0;
+    width: 70%;
+    margin: 0 auto;
+    text-align: center;
+}
+#wallet .WalletButtons .btn {
+    background-color: #007048;
+    font-size: 1rem;
+    width: 30%;
+    color: #fff !important;
+    border: 2px solid #007048;
+    font-weight: 600;
+    -webkit-transition: all .2s ease-in;
+    -o-transition: all .2s ease-in;
+    transition: all .2s ease-in;
+    padding: .7rem 1.4rem;
+}
+
+.btn:not(:disabled):not(.disabled) {
+    cursor: pointer;
+}
+#wallet .WalletButtons .btn.outer {
+    width: 66%;
+    background-color: transparent;
+    color: #007048 !important;
+}
+#wallet .WalletButtons .btn:last-child {
+    margin-right: 0;
+}
+.deposit{
+    display: none;
+}
+.submitDeposit{
+    float: left;
+    margin-top: 28px;
+}
+
+.field-group.custom{
+    margin: 0 auto;
+    width: 470px;
+}
+
+section div.right-column div.inner-right-column-left,
+section div.right-column div.inner-right-column-right,
+section div.right-column div.inner-right-column-center{
+    position: initial;
+    float: none;
+    text-align: center;
+    width: 32%;
+    display: inline-block;
+}
+section div.right-column {
+     overflow: hidden;
+     text-align: left;
+    margin: 0;
+    width: 400px;
+    display: inline-block;
+}
+section div.left-column{
+    width: 125px;
+}
+section div.right-column button {
+    width: 90px;
+    background: #0e5f31;
+    border: white 2px solid;
+    color: white;
+    text-shadow: white;
+    height: 25px;
+    border-radius: 15%;
+}
+section div.right-column button:hover {
+    background: #1cbc66;
+
+    text-shadow: white;
+}
+section div.event-column{
+    width: 600px;
+}
+.field-label{
+    text-align: center;
+}
+
+section.page-content[name="cards"] {
+    float: right;
+    width: 85%;
+}
+
+section div.right-column button {
+    background: #333333;
+}
+
+section div.right-column button.selected {
+    background: #299b59;
+
+}
+section div.event-column {
+    width: 45%;
+    min-width: 600px;
+}
+section div.left-column {
+    width: 150px;
+}
+button:focus {outline:0;}
+.mainBetCard{
+    background-color: #D6D6D6;
+}
+.jss320 {
+    margin-bottom: 19px;
+}
+.jss769 {
+    padding: 9px 12px 5px 2px;
+    background-color: rgb(255, 255, 255);
+}
+
+.jss761 {
+    border-radius: 7px;
+}
+.jss762 {
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
+}
+.jss763 {
+    color: #17214D;
+    overflow: hidden;
+    font-size: 12px;
+    min-width: 0;
+    font-weight: 600;
+    margin-left: 16px;
+    white-space: nowrap;
+    margin-bottom: 4px;
+    padding-right: 5px;
+    text-overflow: ellipsis;
+}
+.jss764 {
+    color: hsl(0, 0%, 66%);
+    font-size: 11px;
+    font-weight: 600;
+    white-space: nowrap;
+    margin-bottom: 4px;
+}
+.align-items-center {
+    -ms-flex-align: center!important;
+    align-items: center!important;
+}
+.d-flex {
+    display: -ms-flexbox!important;
+    display: flex!important;
+}
+.jss766 {
+    margin-left: 16px;
+}
+
+.flex-grow-1 {
+    -ms-flex-positive: 1!important;
+    flex-grow: 1!important;
+}
+.jss182 {
+    cursor: pointer;
+    display: block;
+}
+
+.align-items-center {
+    -ms-flex-align: center!important;
+    align-items: center!important;
+}
+
+.justify-content-between {
+    -ms-flex-pack: justify!important;
+    justify-content: space-between!important;
+}
+
+.flex-nowrap {
+    -ms-flex-wrap: nowrap!important;
+    flex-wrap: nowrap!important;
+}
+
+.flex-row {
+    -ms-flex-direction: row!important;
+    flex-direction: row!important;
+}
+
+.d-flex {
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.align-items-center {
+    -ms-flex-align: center!important;
+    align-items: center!important;
+}
+
+.justify-content-between {
+    -ms-flex-pack: justify!important;
+    justify-content: space-between!important;
+}
+.align-items-center {
+    -ms-flex-align: center!important;
+    align-items: center!important;
+}
+
+.justify-content-between {
+    -ms-flex-pack: justify!important;
+    justify-content: space-between!important;
+}
+
+.flex-nowrap {
+    -ms-flex-wrap: nowrap!important;
+    flex-wrap: nowrap!important;
+}
+
+.flex-row {
+    -ms-flex-direction: row!important;
+    flex-direction: row!important;
+}
+
+.d-flex {
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.align-items-center {
+    -ms-flex-align: center!important;
+    align-items: center!important;
+}
+.jss194 {
+    color: #020203;
+    font-size: 13px;
+    font-weight: bold;
+}
+.jss204 {
+    white-space: nowrap;
+}
+.jss193 {
+    height: 16px;
+    display: inline-block;
+}
+.jss192 {
+    cursor: pointer;
+    height: 15px;
+    margin: -20px -15px;
+    padding: 20px 15px 20px 20px;
+}
+.jss195 {
+    color: #020203;
+    font-size: 15px;
+    font-weight: bold;
+    white-space: nowrap;
+    margin-right: 17px;
+}
+.jss365 {
+    padding: 19px 12px 0 12px;
+    font-family: OpenSans;
+    border-radius: 10px;
+    background-color: #FFFFFF;
+}
+.jss367 {
+    color: #17214D;
+    font-size: 12px;
+    font-weight: bold;
+}
+.flex-row {
+    -ms-flex-direction: row!important;
+    flex-direction: row!important;
+}
+.jss369 {
+    height: 1px;
+    margin: 15px 0 5px;
+    background-color: rgba(183,205,216,.35);
+}
+.jss371 {
+    color: #586682;
+    font-size: 10px;
+    margin-top: 8px;
+    font-weight: 600;
+    padding-left: 5px;
+}
+.jss372 {
+    height: 55px;
+    padding: 8px 15px 10px 20px;
+    margin-top: 9px;
+    border-radius: 12px;
+    background-color: rgba(183,205,216,.35);
+}
+.jss376 {
+    text-align: left;
+}
+.jss373 {
+    color: #586682;
+    font-size: 11px;
+    font-weight: 600;
+}
+.jss374 {
+    color: #162A57;
+    font-size: 15px;
+    font-weight: bold;
+}
+.jss375 {
+    font-size: 11px;
+    font-weight: 300;
+}
+.jss396 {
+    width: 133px;
+    height: 55px;
+    margin: -8px -15px -10px 0;
+    position: relative;
+    animation: smallAnim .33s ease;
+    background: linear-gradient(90deg, #7B8F97 0px, #6E88A6 26.6px, #586192 133px, #149AD4 133px, #1878E5 159.6px, #022CFF 266px, #14A5D4 266px, #1878E5 292.6px, #A902FF 399px);
+    background-size: 399px, 55px;
+    -webkit-mask-size: 100% 100%;
+    background-repeat: no-repeat;
+    /*-webkit-mask-image: url(https://www.winner.ro/build/static/media/bgMask.fee190e8.svg);*/
+    -webkit-mask-repeat: no-repeat;
+    background-position: 0px, 0px;
+    -webkit-mask-position: 0 0;
+    border-top-right-radius: 12px;
+    border-bottom-right-radius: 12px;
+}
+.jss376 {
+    text-align: left;
+}
+.jss396 .subtitle {
+    color: #C8DAFF;
+    margin-top: 8px;
+    margin-left: 33px;
+}
+.jss396 .title {
+    color: #FFFFFF;
+    font-size: 20px;
+    margin-left: 33px;
+}
+.jss396 .currency {
+    color: #FFFFFF;
+}
+.jss377 {
+    margin-top: 5px;
+}
+.jss150 {
+    margin: 0;
+    display: inline-block;
+    padding: 0;
+}
+.jss378 {
+    padding: 10px 5px 10px 25px;
+    background: transparent;
+}
+.MuiButtonBase-root {
+    color: inherit;
+    border: 0;
+    cursor: pointer;
+    margin: 0;
+    display: inline-flex;
+    outline: 0;
+    padding: 0;
+    position: relative;
+    align-items: center;
+    user-select: none;
+    border-radius: 0;
+    vertical-align: middle;
+    -moz-appearance: none;
+    justify-content: center;
+    text-decoration: none;
+    background-color: transparent;
+    -webkit-appearance: none;
+    -webkit-tap-highlight-color: transparent;
+}
+.jss380 {
+    top: 2px;
+    color: #fff;
+    width: 28px;
+    height: 28px;
+    position: relative;
+    font-size: 14px;
+    text-align: center;
+    font-family: OpenSans;
+    font-weight: bold;
+    line-height: 28px;
+    touch-action: manipulation;
+    border-radius: 50%;
+    background-color: #009ED9;
+}
+.MuiTouchRipple-root {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 0;
+    overflow: hidden;
+    position: absolute;
+    border-radius: inherit;
+    pointer-events: none;
+}
+.jss381 {
+    color: #17214D;
+    width: 127px;
+    border: 1px solid #E6EEF1;
+    margin: 0 5px;
+    font-size: 14px;
+    font-family: OpenSans;
+    font-weight: bold;
+    border-radius: 10px;
+    background-color: #E6EEF1;
+}
+.jss382 {
+    height: 32px;
+    padding: 0 0 0 24px;
+    text-align: center;
+}
+.jss383 {
+    margin-left: 4px;
+    padding-right: 4px;
+}
+
+.MuiTypography-colorTextSecondary {
+    color: rgba(0, 0, 0, 0.54);
+}
+.jss379 {
+    padding: 10px 25px 10px 5px;
+    background: transparent;
+}
+.MuiInputBase-root {
+
+    cursor: text;
+    display: inline-flex;
+    position: relative;
+    font-size: 1rem;
+
+    align-items: center;
+
+    line-height: 1.1876em;
+    letter-spacing: 0.00938em;
+}
+.MuiInputBase-input {
+    font: inherit;
+    color: currentColor;
+    width: 100%;
+    border: 0;
+    height: 1.1876em;
+    margin: 0;
+    display: block;
+    padding: 6px 0 7px;
+    min-width: 0;
+    background: none;
+    box-sizing: content-box;
+    animation-name: mui-auto-fill-cancel;
+    letter-spacing: inherit;
+    animation-duration: 10ms;
+    -webkit-tap-highlight-color: transparent;
+}
+.align-items-center {
+    -ms-flex-align: center!important;
+    align-items: center!important;
+    justify-content: center;
+}
+.jss388 {
+    margin: 6px 0;
+}
+.jss389 {
+    cursor: pointer;
+    padding: 10px 0;
+}
+.jss390 {
+    color: #586682;
+    border: 1px solid #B7CDD8;
+    padding: 8px 20px;
+    font-size: 11px;
+    background: #fff;
+    font-family: OpenSans;
+    touch-action: manipulation;
+    border-radius: 13px;
+}
+.MuiTouchRipple-root {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 0;
+    overflow: hidden;
+    position: absolute;
+    border-radius: inherit;
+    pointer-events: none;
+}
+.jss412 {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+.jss411 {
+    width: 42px;
+    cursor: pointer;
+    height: 42px;
+    display: flex;
+    min-width: 42px;
+    align-items: center;
+    margin-right: 16px;
+    border-radius: 50%;
+    justify-content: center;
+    background-color: #FF1A6F;
+}
+.jss411>img {
+    width: 15px;
+    height: 18px;
+}
+.jss384 {
+    color: #fff;
+    width: 100%;
+    height: 42px;
+    padding: 6px 20px 5px 20px;
+    background: linear-gradient(90deg, #F8991C 0%, #FF196E 100%);
+    box-shadow: 0px 3px 6px rgba(0,0,0,.4);
+    font-family: OpenSans;
+    border-radius: 11px;
+}
+.jss395 {
+    font-size: 14px;
+    font-weight: 600;
+}
+.MuiTouchRipple-root {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 0;
+    overflow: hidden;
+    position: absolute;
+    border-radius: inherit;
+    pointer-events: none;
+}
+.jss392{
+    padding-top: 30px;
+}
+section div.event-column {
+    width: 45%;
+    min-width: 600px;
+}
+.event-column.bet-card{
+    display: none;
+}
+
+.input-as-label {
+    border: none;
+    outline: none;
+    background: transparent;
+}
+.MuiTypography-body1 {
+    font-size: 1rem;
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    font-weight: 400;
+    line-height: 1.5;
+    letter-spacing: 0.00938em;
+    padding-bottom: 15px;
+}
+.jss114 {
+    margin: 15px 7px 0px 7px;
+    padding: 1px;
+    border-radius: 7px;
+    background-color: #FFFFFF;
+}
+.jss115 {
+    color: #17214D;
+    cursor: pointer;
+    padding: 12px 17px 6px;
+    font-size: 12px;
+    font-weight: 600;
+}
+.jss119 {
+    width: calc(100% - 13px);
+    margin: 0 auto;
+    background-color: #B7CDD8;
+}
+
+ .MuiDivider-root {
+     border: none;
+     height: 1px;
+     margin: 0;
+     flex-shrink: 0;
+     background-color: rgba(0, 0, 0, 0.12);
+ }
+.jss118 {
+    padding: 7px;
+}
+.jss155 {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: space-between;
+}
+.jss156 {
+    padding: 11px 22px;
+}
+.jss154 {
+    color: #17214D;
+    margin: 0 auto;
+    font-size: 11px;
+    font-weight: 700;
+}
+.jss157 {
+    width: 18px;
+    height: 18px;
+    display: inline-block;
+    margin-right: 7px;
+    vertical-align: middle;
+}
+.jss150 {
+    display: flex;
+    padding: 11px 22px;
+    max-width: 180px;
+    align-items: center;
+    align-content: center;
+    border-radius: 12px;
+    justify-content: space-between;
+    background-color: #B7CDD8;
+}
+.jss152 {
+    display: flex;
+    min-width: 70px;
+    align-items: center;
+    white-space: nowrap;
+    align-content: center;
+    flex-direction: column;
+}
+.jss153 {
+    color: #586682;
+    margin: 0 auto;
+    font-size: 9px;
+    font-weight: 600;
+    white-space: nowrap;
+}
+.jss125 {
+    font-size: 12px;
+}
+.jss128 {
+    color: #17214D;
+    margin: 7px 22px;
+    display: flex;
+    font-size: 12px;
+    align-items: center;
+    align-content: center;
+    justify-content: space-between;
+}
+.jss129 {
+    color: #17214d;
+    cursor: pointer;
+    font-size: 12px;
+    font-weight: 600;
+    text-decoration: underline;
+}
+.jss131 {
+    top: 2px;
+    fill: #7f7f7f;
+    float: right;
+    width: auto;
+    height: 14px;
+    display: inline-block;
+    position: relative;
+    vertical-align: middle;
+}
+.jss124 {
+    display: inline-block;
+    margin-right: 10px;
+}
+.jss122 {
+    color: #FF196E;
+    display: inline-block;
+    border-right: 3px solid #FF196E;
+    margin-right: 10px;
+    padding-right: 10px;
+}
+.jss116 {
+    flex: 1 1 0;
+    text-align: left;
+    white-space: nowrap;
+}
+.jss117 {
+    text-align: right;
+}
+
+ .jss116 {
+     flex: 1 1 0;
+     text-align: left;
+     white-space: nowrap;
+ }
+.jss121 {
+    color: #FF196E;
+    display: inline-block;
+    border-right: 3px solid #06D2BD;
+    margin-right: 10px;
+    padding-right: 10px;
+}
+.jss121 svg {
+    display: inline-block;
+}
+.jss124 {
+    display: inline-block;
+    margin-right: 10px;
+}
+.jss131 {
+    top: 2px;
+    fill: #7f7f7f;
+    float: right;
+    width: auto;
+    height: 14px;
+    display: inline-block;
+    position: relative;
+    vertical-align: middle;
+}
+
+.MuiTab-wrapper {
+    width: 100%;
+    display: inline-flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+.MuiTouchRipple-root {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 0;
+    overflow: hidden;
+    position: absolute;
+    border-radius: inherit;
+    pointer-events: none;
+}
+.MuiTab-root {
+    padding: 6px 12px;
+    overflow: hidden;
+    position: relative;
+    font-size: 0.875rem;
+    max-width: 264px;
+    min-width: 72px;
+    box-sizing: border-box;
+    min-height: 48px;
+    text-align: center;
+    flex-shrink: 0;
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    font-weight: 500;
+    line-height: 1.75;
+    white-space: normal;
+    letter-spacing: 0.02857em;
+    text-transform: uppercase;
+}
+.MuiTabs-centered {
+    justify-content: center;
+}
+
+ .MuiTabs-flexContainer {
+     display: flex;
+ }
+
+ .MuiTabs-centered {
+     justify-content: center;
+ }
+
+ .MuiTabs-flexContainer {
+     display: flex;
+ }
+.MuiTabs-fixed {
+    width: 100%;
+    overflow-x: hidden;
+}
+
+ .MuiTabs-scroller {
+     flex: 1 1 auto;
+     display: inline-block;
+     position: relative;
+     white-space: nowrap;
+ }
+.MuiTab-root {
+    min-width: 160px;
+}
+.MuiButtonBase-root.MuiTab-root.MuiTab-textColorInherit.Mui-selected{
+    border-bottom: 1px solid #f50057;
+}
+
+div.decidedBet {
+    display: none;
+}

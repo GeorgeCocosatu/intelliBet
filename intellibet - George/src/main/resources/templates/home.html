@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html xmlns:th="thymeleaf.org"
+      xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
+
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" th:href="@{/css/style.css}"/>
+    <link rel="stylesheet" type="text/css" href="./css/style.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="./css/home.css" media="screen">
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+
+</head>
+<!------------------------------------------------->
+<!---      Marked for removal   ->      +++      -->
+<!------------------------------------------------->
+<body class="layout-one-column sportsbetting desktop site-wide">
+<div id="container">
+    <header id="header">
+        <div class="top-container">
+            <div class="header-container">
+                <h1 class="header-controls-heading"
+                    title="Online Betting - Sports Bets &amp; Betting Odds">Online Betting - Sports Bets &amp; Betting
+                    Odds</h1>
+                <div class="header-controls">
+                    <ul class="header-menu">
+                        <li class="menu-item">
+                            <a href=""
+                               class="has-icon-suffix  external-link ">
+                                <span class="text">About Us</span>
+                                <i class="icon-wrapper icon-suffix external-link">
+                                </i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="bottom-container">
+            <div class="header-container">
+                <h1></h1>
+                <img name="Logo"
+                     th:src="@{/img/Logo.png}">
+                <div class="account-container">
+                    <div id="login-64127"
+                         data-test-name="container-login">
+                        <div class="">
+                            <div class="widget login">
+                                <div class="login-content">
+                                    <div class="top-container"></div>
+                                    <div style="overflow: hidden; height: 0px; transition: height 400ms ease-out 0s;"></div>
+                                    <div class="MainLogin__inline___1STfT">
+                                        <div class="MainLogin__headerListContainer___18GWl MainLogin__shrinkRight___2QG_i">
+                                            <div>
+                                                <div class="Group__vertical___3xm_m Group__root___hnqau Group__tight___2kwl8">
+                                                    <div class="Group__horizontal___33MBr Group__root___hnqau Group__normal___2vWh8">
+
+                                                        <form sec:authorize="isAnonymous()" th:action="@{/login}" method="POST">
+                                                            <div class="Group__horizontal___33MBr Group__root___hnqau Group__none___3J27q">
+                                                                <div class="_e296pg">
+                                                                    <div class="_e7hn5">
+                                                                        <div class="_irsnq7">
+                                                                            <div class="Fieldstyle__FormField-sc-1gdsmw1-0 dVqUFp">
+                                                                                <input class="Field-headerstyle__HeaderInput-sc-1p523a3-0 fvfEHO Fieldstyle__Input-sc-1gdsmw1-1 iTCtjl"
+                                                                                       id="ufe_unique_id_1"
+                                                                                       name="username"
+                                                                                       type="email"
+                                                                                       placeholder="Email"
+                                                                                       autocomplete="off"
+                                                                                       value="">
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="_3gspvn">
+                                                                    <div class="_e7hn5">
+                                                                        <div class="_irsnq7">
+                                                                            <div class="fieldContainer">
+                                                                                <div class="Fieldstyle__FormField-sc-1gdsmw1-0 dVqUFp">
+                                                                                    <input class="Field-headerstyle__HeaderInput-sc-1p523a3-0 fvfEHO Fieldstyle__Input-sc-1gdsmw1-1 beIQrZ"
+                                                                                           id="ufe_unique_id_2"
+                                                                                           name="password"
+                                                                                           type="password"
+                                                                                           placeholder="Password"
+                                                                                           autocomplete="off"
+                                                                                           value="">
+                                                                                </div>
+                                                                                <div class="Password__decorator___18BCS">
+                                                                                    <div>
+                                                                                        <a class="_1mki11ol"
+                                                                                           data-test-name="forgot-password">
+																		 <span>
+																		 <span class="ForgotPasswordLink__forgotPassword___FNdCi">Forgot?</span>
+																		 </span>
+                                                                                        </a>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div>
+                                                                    <button class="_192xn9cNaN"
+                                                                            data-test-name="btn-login" type="submit">
+														                <span class="_7byueq">
+														                    <span class="_1etkxf1">Log In</span>
+														                </span>
+                                                                    </button>
+                                                                </div>
+                                                            </div>
+
+                                                        </form>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="bottom-container">
+                                            <div sec:authorize="isAnonymous()" class="register-button-container">
+                                                <a href="/register" class="_10sdc5fNaN">
+                                                    <span class="_7byueq">
+                                                        <span class="_1etkxf1">Register</span>
+                                                    </span>
+                                                </a>
+                                            </div>
+                                            <div sec:authorize="isAuthenticated()" class="register-button-container">
+                                                Logged in as: <span sec:authentication="name"></span>
+                                                <a href="/logout" class="_10sdc5fNaN">
+                                                    <span class="_7byueq">
+                                                        <span class="_1etkxf1">Log out</span>
+                                                    </span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="drawer-bottom"
+             class="drawer hidden">
+            <div class="drawer-arrow"></div>
+            <div class="drawer-content drawer-content-right"></div>
+        </div>
+        <div id="drawerBottom-115461"></div>
+    </header>
+    <div id="navigation-355596" class="widget navigation">
+        <div id="nav-main"
+             class="main-navigation">
+            <nav>
+                <ul class="menu-list product-navigation">
+                    <li class="list-item active has-sub ">
+                        <a href="/home"
+                           class="has-icon-prefix link-item"
+                           title="Home">
+                            <i class="icon-wrapper icon-prefix sportsbook">
+                            </i>
+                            <span class="text">Home</span>
+                        </a>
+                    </li>
+
+                    <li sec:authorize="isAuthenticated()" class="list-item">
+                        <a href="/myBets"
+                           class="has-icon-prefix link-item"
+                           title="My Bets">
+                            <i class="icon-wrapper icon-prefix casino">
+                            </i>
+                            <span class="text">My Bets</span>
+                        </a>
+                    </li>
+
+                    <li sec:authorize="isAuthenticated()" class="list-item">
+                        <a href="/myAccount"
+                           class="has-icon-prefix link-item"
+                           title="My Account">
+                            <i class="icon-wrapper icon-prefix horse-racing">
+                            </i>
+                            <span class="text">My Account</span>
+                        </a>
+                    </li>
+                    <li sec:authorize="isAuthenticated()" class="list-item">
+                        <a href="/newEvent"
+                           class="has-icon-prefix link-item"
+                           title="Admin">
+                            <i class="icon-wrapper icon-prefix live-casino-wheel">
+                            </i>
+                            <span class="text">Admin</span>
+                        </a>
+                    </li>
+                    <li sec:authorize="isAnonymous()" class="list-item">
+                        <a href="/register"
+                           class="has-icon-prefix link-item"
+                           title="Admin">
+                            <i class="icon-wrapper icon-prefix live-casino-wheel">
+                            </i>
+                            <span class="text">Register</span>
+                        </a>
+                    </li>
+
+                </ul>
+                <ul class="menu-list misc-navigation">
+
+
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <section id="main-content">
+
+        <!-- Events -->
+        <section class="page-content" name="categories">
+            <div class="category-column">
+                <h2>Category</h2>
+                <p th:each="category : ${T(com.intellibet.model.EventCategory).values()}" th:text="${category}"></p>
+            </div>
+        </section>
+        <section class="page-content" name="cards">
+            <div class="main-content">
+                <div class="event-column">
+                    <div class="event-column-head">
+                        <p>Upcoming events</p>
+                    </div>
+
+                    <div th:each="eventForm : ${eventFormList}" class="event-item">
+                        <form th:object="${eventForm}" th:action="@{/#}" method="post" class="form"
+                              novalidate="novalidate">
+                            <p class="event-item-head">
+                                <span th:text="${eventForm.category}"></span>
+                                <span th:text="${eventForm.time}" class="event-text-right time"></span>
+                                <span th:text="${eventForm.date}" class="event-text-right date"></span>
+                            </p>
+                            <div class="event-teams">
+                                <div class="left-column">
+                                    <p class="playerA" th:text="${eventForm.playerA}"></p>
+                                    <p class="playerB" th:text="${eventForm.playerB}"></p>
+                                </div>
+                                <div class="right-column">
+                                    <div class="inner-right-column">
+                                        <div class="inner-right-column-left">
+                                            <label class="option">1</label>
+                                            <button th:text="${eventForm.oddA}"></button>
+                                        </div>
+                                        <div class="inner-right-column-center">
+                                            <label class="option">X</label>
+                                            <button th:text="${eventForm.oddX}"></button>
+                                        </div>
+                                        <div class="inner-right-column-right">
+                                            <label class="option">2</label>
+                                            <button th:text="${eventForm.oddB}"></button>
+                                        </div>
+                                    </div>
+
+
+
+                                </div>
+                            </div>
+                            <span style="display: none;" th:text="${eventForm.eventId}" class="eventId"></span>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="event-column bet-card">
+                    <div class="event-column-head">
+                        <p>Your bet</p>
+                    </div>
+                    <div class="mainBetCard">
+
+                        <form th:action="@{/home}" th:object="${betForm}"  method="post" class="form">
+                            <div class="jss320">
+                                <div class="jss321">
+                                    <div class="jss761 jss769">
+                                        <div class="jss762">
+                                            <div class="jss763 teams">Hallescher : Zwickau</div>
+                                            <div class="jss764 dateTime">12/10 20:00</div>
+                                        </div>
+                                        <div class="d-flex align-items-center">
+                                            <div class="flex-grow-1 jss766">
+                                                <div class="jss182">
+                                                    <div class="d-flex flex-row flex-nowrap justify-content-between align-items-center">
+                                                        <div class="d-flex align-items-center">
+                                                            <div class="jss194">Final | <span th:field="*{option}" class="jss204 option">1</span></div>
+                                                        </div>
+                                                        <div class="undefined d-flex flex-row flex-nowrap justify-content-between align-items-center">
+                                                            <div class="jss195 odd">2.20</div>
+                                                            <div>
+                                                                <div class="jss192 d-flex align-items-center">
+                                                                    <img class="jss193" src="https://www.winner.ro/build/static/media/delete.71c92193.svg" alt="">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                            <div class="jss365">
+                                <div>
+                                    <div class="jss366 d-flex flex-row flex-nowrap justify-content-between align-items-center">
+                                        <div class="jss367">DISPONIBIL</div>
+                                        <div class="jss367"><span th:text="${betForm.userBalance}"></span> Lei</div>
+                                    </div>
+                                    <div class="jss369"></div>
+                                </div>
+                                <div class="jss371">Alege miza</div>
+                                <div class="jss372 d-flex flex-row flex-nowrap justify-content-between align-items-center">
+                                    <div class="jss376"><div class="jss373">Cota finala</div>
+                                        <div class="jss374 odd">2.20</div>
+                                    </div>
+                                    <div class="jss376">
+                                        <div class="jss373">Sumă pariată</div>
+                                        <div class="jss374"><span class="betValue">10</span> <span class="jss375">Lei</span></div>
+                                    </div>
+                                    <div class="jss376 jss396 ">
+                                        <div class="jss373 subtitle">Castig</div>
+                                        <div class="jss374 title"><span class="potentialGain">22.00</span><span class="jss375 currency">Lei</span></div>
+                                    </div>
+                                </div>
+                                <div class="jss377 d-flex flex-row flex-nowrap align-items-center justify-content-center">
+                                    <div class="jss150 ">
+                                        <button class="MuiButtonBase-root jss378" tabindex="0" type="button" variant="contained">
+                                            <div class="jss380">-</div><span class="MuiTouchRipple-root"></span>
+                                        </button>
+                                    </div>
+                                    <div class="MuiInputBase-root jss381  MuiInputBase-adornedEnd">
+                                        <input th:field="*{value}" type="number" class="input-bet-value MuiInputBase-input jss382 MuiInputBase-inputAdornedEnd" aria-label="stake" pattern="[0-9.]+" value="10">
+                                        <div class="MuiInputAdornment-root jss383  MuiInputAdornment-positionEnd">
+                                            <p class="MuiTypography-root MuiTypography-body1 MuiTypography-colorTextSecondary">Lei</p>
+                                        </div>
+                                    </div>
+                                    <div class="jss150 ">
+                                        <button class="MuiButtonBase-root jss379" tabindex="0" type="button" variant="contained">
+                                            <div class="jss380">+</div><span class="MuiTouchRipple-root"></span>
+                                        </button>
+                                    </div>
+                                </div>
+                                <p class="error-message"
+                                   th:each="error: ${#fields.errors('value')}"
+                                   th:text="${error}">Validation error</p>
+                                <div class="jss388 d-flex flex-row flex-nowrap justify-content-between align-items-center">
+                                    <div class="jss389">
+                                        <button class="MuiButtonBase-root jss390" tabindex="0" type="button" variant="contained">+5 Lei<span class="MuiTouchRipple-root"></span>
+                                        </button>
+                                    </div>
+                                    <div class="jss389">
+                                        <button class="MuiButtonBase-root jss390" tabindex="0" type="button" variant="contained">+10 Lei<span class="MuiTouchRipple-root"></span>
+                                        </button>
+                                    </div>
+                                    <div class="jss389">
+                                        <button class="MuiButtonBase-root jss390" tabindex="0" type="button" variant="contained">+20 Lei<span class="MuiTouchRipple-root"></span>
+                                        </button>
+                                    </div>
+                                    <div class="jss389">
+                                        <button class="MuiButtonBase-root jss390" tabindex="0" type="button" variant="contained">+50 Lei<span class="MuiTouchRipple-root"></span>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="jss412">
+                                    <div class="jss411">
+                                        <img src="https://www.winner.ro/build/static/media/deleteWhite.a3e27507.svg" alt="">
+                                    </div>
+                                    <button class="MuiButtonBase-root jss384 " tabindex="0" type="submit" variant="contained">
+                                        <div>
+                                            <div class="jss395">PLASEAZĂ BILET ONLINE</div>
+                                        </div>
+                                        <span class="MuiTouchRipple-root"></span>
+                                    </button>
+                                </div>
+                                <div class="jss391 d-flex flex-row flex-nowrap justify-content-between align-items-center">
+                                    <div class="jss392"></div>
+                                    <div class="rsc-default"></div>
+                                </div>
+                                <div class="jss398"></div>
+                            </div>
+                        </div>
+                            <input th:field="*{option}" type="hidden" class="option">
+                            <input th:field="*{eventId}" type="hidden" class="eventId">
+                        </form>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+    </section>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<!--	     <script type="text/javascript" th:src="@{/js/script.js}"></script>-->
+<script src="/js/script.js"></script>
+</body>
+
+
+</html>
